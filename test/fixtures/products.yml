@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nombre: MyString
+  preciocompra: 9.99
+  precioventa: 9.99
+  cantidad: 1
+  cantidadminima: 1
+  ganancia: 9.99
+  provider_id: 
+  tipo: MyString
+  estado: false
+
+two:
+  nombre: MyString
+  preciocompra: 9.99
+  precioventa: 9.99
+  cantidad: 1
+  cantidadminima: 1
+  ganancia: 9.99
+  provider_id: 
+  tipo: MyString
+  estado: false

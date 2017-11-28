@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  fecha: 2017-11-21
+  hora: 2017-11-21
+  client_id: 
+  user_id: 
+  membership_id: 
+  totalefectivo: 9.99
+  totaltarjeta: 9.99
+  totalcheque: 9.99
+  total: 9.99
+  nota: MyText
+
+two:
+  fecha: 2017-11-21
+  hora: 2017-11-21
+  client_id: 
+  user_id: 
+  membership_id: 
+  totalefectivo: 9.99
+  totaltarjeta: 9.99
+  totalcheque: 9.99
+  total: 9.99
+  nota: MyText

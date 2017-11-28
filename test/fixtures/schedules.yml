@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  fechainicio: 2017-11-19
+  fechafin: 2017-11-19
+  dias: MyText
+  horainicio: 2017-11-19 00:02:06
+  horafin: 2017-11-19 00:02:06
+  user_id: 
+  service_id: 
+
+two:
+  fechainicio: 2017-11-19
+  fechafin: 2017-11-19
+  dias: MyText
+  horainicio: 2017-11-19 00:02:06
+  horafin: 2017-11-19 00:02:06
+  user_id: 
+  service_id: 
