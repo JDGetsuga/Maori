@@ -1,3 +1,10 @@
+GIT
+  remote: https://github.com/JDGetsuga/rails_admin_theme.git
+  revision: e9ff95b9fd43696569c1e02ca448a79187e95ac4
+  specs:
+    rails_admin_rollincode (1.2.1)
+      rails (>= 4.0, < 6)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -212,6 +219,7 @@ DEPENDENCIES
   jquery-rails
   rails (= 4.2.8)
   rails_admin
+  rails_admin_rollincode!
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
   sqlite3

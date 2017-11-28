@@ -4,4 +4,5 @@ class Sale < ActiveRecord::Base
   has_many :membership
   has_many :product_quantities
   has_many :checks
+
 end

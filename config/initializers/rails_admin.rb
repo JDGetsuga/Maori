@@ -1,5 +1,7 @@
 RailsAdmin.config do |config|
 
+  config.main_app_name = ["Maori", ""]
+
   ### Popular gems integration
 
   ## == Devise ==
@@ -223,6 +225,41 @@ config.model User do
   #config.model Check do
   #  visible false
   #end
+
+   config.model Sale do
+    create do
+      field :fecha 
+      field :client
+      field :membership
+      field :product_quantities
+      field :totalefectivo
+      field :totaltarjeta
+      field :totalcheque
+      field :total
+      field :checks
+      field :nota
+      field :user_id, :hidden do
+        default_value do
+          bindings[:view]._current_user.id
+        end
+      end 
+    end
+    edit do
+      field :client
+      field :membership
+      field :product_quantities
+      field :totalefectivo
+      field :totaltarjeta
+      field :totalcheque
+      field :total
+      field :checks
+      field :nota
+    end
+    list do
+      
+    end
+  end
+
 
   config.actions do
     dashboard                     # mandatory

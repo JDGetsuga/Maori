@@ -16715,3 +16715,2104 @@ Processing by RailsAdmin::MainController#new as HTML
   Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_submit_buttons.html.haml (0.0ms)
   Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax (592.9ms)
 Completed 200 OK in 732ms (Views: 728.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-11-27 22:41:02 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "checks"[0m
+  [1m[35mCheck Load (0.0ms)[0m  SELECT  "checks".* FROM "checks"  ORDER BY "checks"."id" DESC LIMIT 1
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "clients"[0m
+  [1m[35mClient Load (0.5ms)[0m  SELECT  "clients".* FROM "clients"  ORDER BY "clients"."id" DESC LIMIT 1
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "headerclasses"[0m
+  [1m[35mHeaderclass Load (0.5ms)[0m  SELECT  "headerclasses".* FROM "headerclasses"  ORDER BY "headerclasses"."id" DESC LIMIT 1
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "memberships"[0m
+  [1m[35mMembership Load (0.5ms)[0m  SELECT  "memberships".* FROM "memberships"  ORDER BY "memberships"."id" DESC LIMIT 1
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "products"[0m
+  [1m[35mProduct Load (0.0ms)[0m  SELECT  "products".* FROM "products"  ORDER BY "products"."id" DESC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "product_quantities"[0m
+  [1m[35mProductQuantity Load (0.0ms)[0m  SELECT  "product_quantities".* FROM "product_quantities"  ORDER BY "product_quantities"."id" DESC LIMIT 1
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "providers"[0m
+  [1m[35mProvider Load (0.0ms)[0m  SELECT  "providers".* FROM "providers"  ORDER BY "providers"."id" DESC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "sales"[0m
+  [1m[35mSale Load (0.5ms)[0m  SELECT  "sales".* FROM "sales"  ORDER BY "sales"."id" DESC LIMIT 1
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "schedules"[0m
+  [1m[35mSchedule Load (0.5ms)[0m  SELECT  "schedules".* FROM "schedules"  ORDER BY "schedules"."id" DESC LIMIT 1
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "services"[0m
+  [1m[35mService Load (0.0ms)[0m  SELECT  "services".* FROM "services"  ORDER BY "services"."id" DESC LIMIT 1
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  ORDER BY "users"."id" DESC LIMIT 1
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (109.1ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_secondary_navigation.html.haml (10.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_navigation.html.haml (87.1ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (18.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/pjax.html.haml (15.5ms)
+Completed 200 OK in 2815ms (Views: 2088.3ms | ActiveRecord: 16.5ms)
+
+
+Started GET "/sale?_pjax=%5Bdata-pjax-container%5D" for ::1 at 2017-11-27 22:43:08 -0500
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"sale"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mSale Load (0.5ms)[0m  SELECT  "sales".* FROM "sales"  ORDER BY sales.id desc LIMIT 20 OFFSET 0
+  [1m[36mClient Load (0.5ms)[0m  [1mSELECT "clients".* FROM "clients" WHERE "clients"."id" IN (1)[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IN (1)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (178.7ms)
+Completed 200 OK in 327ms (Views: 313.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/sale/new?_pjax=%5Bdata-pjax-container%5D" for ::1 at 2017-11-27 22:43:10 -0500
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"sale"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_datetime.html.haml (7.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_datetime.html.haml (1.0ms)
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "clients"
+  [1m[36mClient Load (0.0ms)[0m  [1mSELECT "clients".* FROM "clients"  ORDER BY clients.id desc[0m
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_filtering_select.html.haml (17.5ms)
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users"  ORDER BY users.id desc[0m
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_filtering_select.html.haml (9.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (9.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_text.html.haml (4.5ms)
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "memberships"
+  [1m[36mMembership Load (0.5ms)[0m  [1mSELECT "memberships".* FROM "memberships"  ORDER BY memberships.id desc[0m
+  [1m[35mClient Load (0.5ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" IN (1)
+  [1m[36mSale Load (0.5ms)[0m  [1mSELECT "sales".* FROM "sales" WHERE "sales"."id" IN (1)[0m
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_filtering_multiselect.html.haml (54.6ms)
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "product_quantities"
+  [1m[36mProductQuantity Load (0.0ms)[0m  [1mSELECT "product_quantities".* FROM "product_quantities"  ORDER BY product_quantities.id desc[0m
+  [1m[35mProduct Load (0.0ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" IN (1)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "sales".* FROM "sales" WHERE "sales"."id" IN (1)[0m
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_filtering_multiselect.html.haml (19.0ms)
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "checks"
+  [1m[36mCheck Load (0.5ms)[0m  [1mSELECT "checks".* FROM "checks"  ORDER BY checks.id desc[0m
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_filtering_multiselect.html.haml (14.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_submit_buttons.html.haml (9.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax (1089.0ms)
+Completed 200 OK in 1223ms (Views: 1212.5ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/sale/new" for ::1 at 2017-11-27 22:45:43 -0500
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"model_name"=>"sale"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_datetime.html.haml (1.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_datetime.html.haml (1.0ms)
+  [1m[36mClient Load (0.5ms)[0m  [1mSELECT "clients".* FROM "clients"  ORDER BY clients.id desc[0m
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_filtering_select.html.haml (8.5ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users"  ORDER BY users.id desc
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_filtering_select.html.haml (6.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_text.html.haml (0.5ms)
+  [1m[36mMembership Load (0.0ms)[0m  [1mSELECT "memberships".* FROM "memberships"  ORDER BY memberships.id desc[0m
+  [1m[35mClient Load (0.5ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" IN (1)
+  [1m[36mSale Load (0.5ms)[0m  [1mSELECT "sales".* FROM "sales" WHERE "sales"."id" IN (1)[0m
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_filtering_multiselect.html.haml (9.5ms)
+  [1m[35mProductQuantity Load (0.0ms)[0m  SELECT "product_quantities".* FROM "product_quantities"  ORDER BY product_quantities.id desc
+  [1m[36mProduct Load (0.0ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" IN (1)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "sales".* FROM "sales" WHERE "sales"."id" IN (1)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_filtering_multiselect.html.haml (12.0ms)
+  [1m[36mCheck Load (0.0ms)[0m  [1mSELECT "checks".* FROM "checks"  ORDER BY checks.id desc[0m
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_filtering_multiselect.html.haml (6.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_submit_buttons.html.haml (3.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/application (1065.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_secondary_navigation.html.haml (3.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_navigation.html.haml (70.1ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (15.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/pjax.html.haml (8.5ms)
+Completed 200 OK in 2015ms (Views: 2004.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/sale/new" for ::1 at 2017-11-27 22:46:33 -0500
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"model_name"=>"sale"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_datetime.html.haml (1.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_datetime.html.haml (1.0ms)
+  [1m[36mClient Load (1.0ms)[0m  [1mSELECT "clients".* FROM "clients"  ORDER BY clients.id desc[0m
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_filtering_select.html.haml (8.0ms)
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users"  ORDER BY users.id desc
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_filtering_select.html.haml (6.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_text.html.haml (1.0ms)
+  [1m[36mMembership Load (0.0ms)[0m  [1mSELECT "memberships".* FROM "memberships"  ORDER BY memberships.id desc[0m
+  [1m[35mClient Load (0.5ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" IN (1)
+  [1m[36mSale Load (0.0ms)[0m  [1mSELECT "sales".* FROM "sales" WHERE "sales"."id" IN (1)[0m
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_filtering_multiselect.html.haml (8.5ms)
+  [1m[35mProductQuantity Load (0.5ms)[0m  SELECT "product_quantities".* FROM "product_quantities"  ORDER BY product_quantities.id desc
+  [1m[36mProduct Load (0.0ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" IN (1)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "sales".* FROM "sales" WHERE "sales"."id" IN (1)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_filtering_multiselect.html.haml (8.5ms)
+  [1m[36mCheck Load (0.5ms)[0m  [1mSELECT "checks".* FROM "checks"  ORDER BY checks.id desc[0m
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_filtering_multiselect.html.haml (7.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_submit_buttons.html.haml (3.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/application (994.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_secondary_navigation.html.haml (3.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_navigation.html.haml (63.6ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (15.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/pjax.html.haml (8.5ms)
+Completed 200 OK in 1895ms (Views: 1884.6ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/sale/new" for ::1 at 2017-11-27 22:46:56 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"model_name"=>"sale"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (12.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_submit_buttons.html.haml (22.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/application (182.2ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_secondary_navigation.html.haml (17.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_navigation.html.haml (91.1ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (49.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/pjax.html.haml (12.5ms)
+Completed 200 OK in 2624ms (Views: 2031.2ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/sale?_pjax=%5Bdata-pjax-container%5D" for ::1 at 2017-11-27 22:49:03 -0500
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"sale"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mSale Load (0.0ms)[0m  SELECT  "sales".* FROM "sales"  ORDER BY sales.id desc LIMIT 20 OFFSET 0
+  [1m[36mClient Load (0.5ms)[0m  [1mSELECT "clients".* FROM "clients" WHERE "clients"."id" IN (1)[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IN (1)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (183.7ms)
+Completed 200 OK in 317ms (Views: 306.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/sale?model_name=sale&set=1&_pjax=%5Bdata-pjax-container%5D" for ::1 at 2017-11-27 22:49:47 -0500
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"sale", "set"=>"1", "_pjax"=>"[data-pjax-container]"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mSale Load (0.5ms)[0m  SELECT  "sales".* FROM "sales"  ORDER BY sales.id desc LIMIT 20 OFFSET 0
+  [1m[36mClient Load (0.5ms)[0m  [1mSELECT "clients".* FROM "clients" WHERE "clients"."id" IN (1)[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IN (1)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (89.1ms)
+Completed 200 OK in 246ms (Views: 236.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/sale?model_name=sale&set=2&_pjax=%5Bdata-pjax-container%5D" for ::1 at 2017-11-27 22:50:03 -0500
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"sale", "set"=>"2", "_pjax"=>"[data-pjax-container]"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mSale Load (0.5ms)[0m  SELECT  "sales".* FROM "sales"  ORDER BY sales.id desc LIMIT 20 OFFSET 0
+  [1m[36mClient Load (0.0ms)[0m  [1mSELECT "clients".* FROM "clients" WHERE "clients"."id" IN (1)[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IN (1)
+  [1m[36mMembership Load (0.0ms)[0m  [1mSELECT "memberships".* FROM "memberships" WHERE "memberships"."sale_id" = ?[0m  [["sale_id", 1]]
+  [1m[35mProductQuantity Load (0.0ms)[0m  SELECT "product_quantities".* FROM "product_quantities" WHERE "product_quantities"."sale_id" = ?  [["sale_id", 1]]
+  [1m[36mCheck Load (0.0ms)[0m  [1mSELECT "checks".* FROM "checks" WHERE "checks"."sale_id" = ?[0m  [["sale_id", 1]]
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (140.6ms)
+Completed 200 OK in 275ms (Views: 265.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/sale?model_name=sale&set=1&_pjax=%5Bdata-pjax-container%5D" for ::1 at 2017-11-27 22:50:38 -0500
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"sale", "set"=>"1", "_pjax"=>"[data-pjax-container]"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mSale Load (0.0ms)[0m  [1mSELECT  "sales".* FROM "sales"  ORDER BY sales.id desc LIMIT 20 OFFSET 0[0m
+  [1m[35mClient Load (0.5ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" IN (1)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IN (1)[0m
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (83.1ms)
+Completed 200 OK in 232ms (Views: 223.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/sale?model_name=sale&set=1" for ::1 at 2017-11-27 22:52:21 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"sale", "set"=>"1"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mSale Load (0.5ms)[0m  [1mSELECT  "sales".* FROM "sales"  ORDER BY sales.id desc LIMIT 20 OFFSET 0[0m
+  [1m[35mClient Load (0.5ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" IN (1)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IN (1)[0m
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application (242.7ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_secondary_navigation.html.haml (11.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_navigation.html.haml (85.1ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (38.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/pjax.html.haml (13.0ms)
+Completed 200 OK in 2751ms (Views: 2141.6ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/sale/new?_pjax=%5Bdata-pjax-container%5D" for ::1 at 2017-11-27 22:54:13 -0500
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"sale"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (81.6ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax (161.7ms)
+Completed 500 Internal Server Error in 296ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `Client' for #<Sale:0xb8644a8>
+If you want to use a RailsAdmin virtual field(= a field without corresponding instance method),
+you should declare 'formatted_value' in the field definition.
+  field :Client do
+    formatted_value{ bindings[:object].call_some_method }
+  end
+):
+    1: = form.send field.view_helper, field.method_name, field.html_attributes.reverse_merge({ value: field.form_value, class: 'form-control', required: field.required})
+  rails_admin (1.2.0) lib/rails_admin/config/fields/base.rb:280:in `rescue in value'
+  rails_admin (1.2.0) lib/rails_admin/config/fields/base.rb:278:in `value'
+  rails_admin (1.2.0) lib/rails_admin/config/fields/base.rb:328:in `form_default_value'
+  rails_admin (1.2.0) lib/rails_admin/config/fields/base.rb:332:in `form_value'
+  rails_admin (1.2.0) app/views/rails_admin/main/_form_field.html.haml:1:in `_____itnami_rubystack_________ruby_lib_ruby_gems_______gems_rails_admin_______app_views_rails_admin_main__form_field_html_haml__735486564_96597744'
+  actionview (4.2.8) lib/action_view/template.rb:145:in `block in render'
+  activesupport (4.2.8) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (4.2.8) lib/action_view/template.rb:333:in `instrument'
+  actionview (4.2.8) lib/action_view/template.rb:143:in `render'
+  actionview (4.2.8) lib/action_view/renderer/partial_renderer.rb:339:in `render_partial'
+  actionview (4.2.8) lib/action_view/renderer/partial_renderer.rb:310:in `block in render'
+  actionview (4.2.8) lib/action_view/renderer/abstract_renderer.rb:39:in `block in instrument'
+  activesupport (4.2.8) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.8) lib/active_support/notifications.rb:164:in `instrument'
+  actionview (4.2.8) lib/action_view/renderer/abstract_renderer.rb:39:in `instrument'
+  actionview (4.2.8) lib/action_view/renderer/partial_renderer.rb:309:in `render'
+  actionview (4.2.8) lib/action_view/renderer/renderer.rb:51:in `render_partial'
+  actionview (4.2.8) lib/action_view/renderer/renderer.rb:25:in `render'
+  actionview (4.2.8) lib/action_view/helpers/rendering_helper.rb:32:in `render'
+  haml (5.0.4) lib/haml/helpers/action_view_mods.rb:12:in `block in render'
+  haml (5.0.4) lib/haml/helpers.rb:92:in `non_haml'
+  haml (5.0.4) lib/haml/helpers/action_view_mods.rb:12:in `render'
+  rails_admin (1.2.0) lib/rails_admin/config/fields/base.rb:227:in `block in <class:Base>'
+  rails_admin (1.2.0) lib/rails_admin/config/configurable.rb:66:in `instance_eval'
+  rails_admin (1.2.0) lib/rails_admin/config/configurable.rb:66:in `block in register_instance_option'
+  rails_admin (1.2.0) lib/rails_admin/config/proxyable/proxy.rb:27:in `method_missing'
+  rails_admin (1.2.0) app/helpers/rails_admin/form_builder.rb:73:in `field_for'
+  rails_admin (1.2.0) app/helpers/rails_admin/form_builder.rb:58:in `block in input_for'
+  actionview (4.2.8) lib/action_view/helpers/capture_helper.rb:38:in `block in capture'
+  actionview (4.2.8) lib/action_view/helpers/capture_helper.rb:202:in `with_output_buffer'
+  haml (5.0.4) lib/haml/helpers/action_view_xss_mods.rb:6:in `with_output_buffer_with_haml_xss'
+  actionview (4.2.8) lib/action_view/helpers/capture_helper.rb:38:in `capture'
+  haml (5.0.4) lib/haml/helpers/action_view_mods.rb:47:in `capture_with_haml'
+  actionview (4.2.8) lib/action_view/helpers/tag_helper.rb:106:in `content_tag'
+  haml (5.0.4) lib/haml/helpers/action_view_mods.rb:66:in `content_tag_with_haml'
+  rails_admin (1.2.0) app/helpers/rails_admin/form_builder.rb:57:in `input_for'
+  rails_admin (1.2.0) app/helpers/rails_admin/form_builder.rb:46:in `block in field_wrapper_for'
+  actionview (4.2.8) lib/action_view/helpers/capture_helper.rb:38:in `block in capture'
+  actionview (4.2.8) lib/action_view/helpers/capture_helper.rb:202:in `with_output_buffer'
+  haml (5.0.4) lib/haml/helpers/action_view_xss_mods.rb:6:in `with_output_buffer_with_haml_xss'
+  actionview (4.2.8) lib/action_view/helpers/capture_helper.rb:38:in `capture'
+  haml (5.0.4) lib/haml/helpers/action_view_mods.rb:47:in `capture_with_haml'
+  actionview (4.2.8) lib/action_view/helpers/tag_helper.rb:106:in `content_tag'
+  haml (5.0.4) lib/haml/helpers/action_view_mods.rb:66:in `content_tag_with_haml'
+  rails_admin (1.2.0) app/helpers/rails_admin/form_builder.rb:44:in `field_wrapper_for'
+  rails_admin (1.2.0) app/helpers/rails_admin/form_builder.rb:35:in `block (2 levels) in fieldset_for'
+  rails_admin (1.2.0) app/helpers/rails_admin/form_builder.rb:35:in `collect'
+  rails_admin (1.2.0) app/helpers/rails_admin/form_builder.rb:35:in `block in fieldset_for'
+  actionview (4.2.8) lib/action_view/helpers/capture_helper.rb:38:in `block in capture'
+  actionview (4.2.8) lib/action_view/helpers/capture_helper.rb:202:in `with_output_buffer'
+  haml (5.0.4) lib/haml/helpers/action_view_xss_mods.rb:6:in `with_output_buffer_with_haml_xss'
+  actionview (4.2.8) lib/action_view/helpers/capture_helper.rb:38:in `capture'
+  haml (5.0.4) lib/haml/helpers/action_view_mods.rb:47:in `capture_with_haml'
+  actionview (4.2.8) lib/action_view/helpers/tag_helper.rb:106:in `content_tag'
+  haml (5.0.4) lib/haml/helpers/action_view_mods.rb:66:in `content_tag_with_haml'
+  rails_admin (1.2.0) app/helpers/rails_admin/form_builder.rb:31:in `fieldset_for'
+  rails_admin (1.2.0) app/helpers/rails_admin/form_builder.rb:16:in `block (2 levels) in generate'
+  rails_admin (1.2.0) app/helpers/rails_admin/form_builder.rb:15:in `collect'
+  rails_admin (1.2.0) app/helpers/rails_admin/form_builder.rb:15:in `block in generate'
+  rails_admin (1.2.0) app/helpers/rails_admin/form_builder.rb:131:in `without_field_error_proc_added_div'
+  rails_admin (1.2.0) app/helpers/rails_admin/form_builder.rb:7:in `generate'
+  rails_admin (1.2.0) app/views/rails_admin/main/new.html.haml:2:in `block in _____itnami_rubystack_________ruby_lib_ruby_gems_______gems_rails_admin_______app_views_rails_admin_main_new_html_haml___197546711_96898032'
+  haml (5.0.4) lib/haml/helpers.rb:382:in `call'
+  haml (5.0.4) lib/haml/helpers.rb:382:in `block in capture_haml'
+  haml (5.0.4) lib/haml/helpers.rb:667:in `with_haml_buffer'
+  haml (5.0.4) lib/haml/helpers.rb:378:in `capture_haml'
+  haml (5.0.4) lib/haml/helpers/xss_mods.rb:62:in `capture_haml_with_haml_xss'
+  haml (5.0.4) lib/haml/helpers/action_view_mods.rb:45:in `capture_with_haml'
+  actionview (4.2.8) lib/action_view/helpers/form_helper.rb:444:in `form_for'
+  haml (5.0.4) lib/haml/helpers/action_view_xss_mods.rb:29:in `form_for_with_haml_xss'
+  rails_admin (1.2.0) app/helpers/rails_admin/main_helper.rb:9:in `rails_admin_form_for'
+  rails_admin (1.2.0) app/views/rails_admin/main/new.html.haml:1:in `_____itnami_rubystack_________ruby_lib_ruby_gems_______gems_rails_admin_______app_views_rails_admin_main_new_html_haml___197546711_96898032'
+  actionview (4.2.8) lib/action_view/template.rb:145:in `block in render'
+  activesupport (4.2.8) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (4.2.8) lib/action_view/template.rb:333:in `instrument'
+  actionview (4.2.8) lib/action_view/template.rb:143:in `render'
+  actionview (4.2.8) lib/action_view/renderer/template_renderer.rb:54:in `block (2 levels) in render_template'
+  actionview (4.2.8) lib/action_view/renderer/abstract_renderer.rb:39:in `block in instrument'
+  activesupport (4.2.8) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.8) lib/active_support/notifications.rb:164:in `instrument'
+  actionview (4.2.8) lib/action_view/renderer/abstract_renderer.rb:39:in `instrument'
+  actionview (4.2.8) lib/action_view/renderer/template_renderer.rb:53:in `block in render_template'
+  actionview (4.2.8) lib/action_view/renderer/template_renderer.rb:61:in `render_with_layout'
+  actionview (4.2.8) lib/action_view/renderer/template_renderer.rb:52:in `render_template'
+  actionview (4.2.8) lib/action_view/renderer/template_renderer.rb:14:in `render'
+  actionview (4.2.8) lib/action_view/renderer/renderer.rb:46:in `render_template'
+  actionview (4.2.8) lib/action_view/renderer/renderer.rb:27:in `render'
+  actionview (4.2.8) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.8) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.8) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.8) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.8) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.8) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.8) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.8) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.8) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.2.8) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.8) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.8) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.8) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.8) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  remotipart (1.3.1) lib/remotipart/render_overrides.rb:16:in `render_with_remotipart'
+  rails_admin (1.2.0) lib/rails_admin/config/actions/new.rb:28:in `block (4 levels) in <class:New>'
+  actionpack (4.2.8) lib/action_controller/metal/mime_responds.rb:217:in `call'
+  actionpack (4.2.8) lib/action_controller/metal/mime_responds.rb:217:in `respond_to'
+  rails_admin (1.2.0) lib/rails_admin/config/actions/new.rb:27:in `block (2 levels) in <class:New>'
+  rails_admin (1.2.0) app/controllers/rails_admin/main_controller.rb:22:in `instance_eval'
+  rails_admin (1.2.0) app/controllers/rails_admin/main_controller.rb:22:in `new'
+  actionpack (4.2.8) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.2.8) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.8) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.8) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.8) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.8) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.8) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.8) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.8) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.8) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.8) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.8) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.8) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.8) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.8) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.8) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.8) lib/action_dispatch/routing/route_set.rb:74:in `call'
+  actionpack (4.2.8) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.8) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.8) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.8) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.8) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.8) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/railtie.rb:194:in `public_send'
+  railties (4.2.8) lib/rails/railtie.rb:194:in `method_missing'
+  actionpack (4.2.8) lib/action_dispatch/routing/mapper.rb:51:in `serve'
+  actionpack (4.2.8) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.8) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.8) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.8) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack-pjax (1.0.0) lib/rack/pjax.rb:12:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+  warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+  warden (1.2.7) lib/warden/manager.rb:35:in `call'
+  rack (1.6.8) lib/rack/etag.rb:24:in `call'
+  rack (1.6.8) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.8) lib/rack/head.rb:13:in `call'
+  remotipart (1.3.1) lib/remotipart/middleware.rb:32:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.8) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.8) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.8) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.8) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb (694.2ms)
+
+
+Started GET "/sale/new" for ::1 at 2017-11-27 22:54:14 -0500
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"model_name"=>"sale"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (60.1ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/application (133.1ms)
+Completed 500 Internal Server Error in 267ms (ActiveRecord: 0.5ms)
+
+ActionView::Template::Error (undefined method `Client' for #<Sale:0x99e1150>
+If you want to use a RailsAdmin virtual field(= a field without corresponding instance method),
+you should declare 'formatted_value' in the field definition.
+  field :Client do
+    formatted_value{ bindings[:object].call_some_method }
+  end
+):
+    1: = form.send field.view_helper, field.method_name, field.html_attributes.reverse_merge({ value: field.form_value, class: 'form-control', required: field.required})
+  rails_admin (1.2.0) lib/rails_admin/config/fields/base.rb:280:in `rescue in value'
+  rails_admin (1.2.0) lib/rails_admin/config/fields/base.rb:278:in `value'
+  rails_admin (1.2.0) lib/rails_admin/config/fields/base.rb:328:in `form_default_value'
+  rails_admin (1.2.0) lib/rails_admin/config/fields/base.rb:332:in `form_value'
+  rails_admin (1.2.0) app/views/rails_admin/main/_form_field.html.haml:1:in `_____itnami_rubystack_________ruby_lib_ruby_gems_______gems_rails_admin_______app_views_rails_admin_main__form_field_html_haml__735486564_96597744'
+  actionview (4.2.8) lib/action_view/template.rb:145:in `block in render'
+  activesupport (4.2.8) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (4.2.8) lib/action_view/template.rb:333:in `instrument'
+  actionview (4.2.8) lib/action_view/template.rb:143:in `render'
+  actionview (4.2.8) lib/action_view/renderer/partial_renderer.rb:339:in `render_partial'
+  actionview (4.2.8) lib/action_view/renderer/partial_renderer.rb:310:in `block in render'
+  actionview (4.2.8) lib/action_view/renderer/abstract_renderer.rb:39:in `block in instrument'
+  activesupport (4.2.8) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.8) lib/active_support/notifications.rb:164:in `instrument'
+  actionview (4.2.8) lib/action_view/renderer/abstract_renderer.rb:39:in `instrument'
+  actionview (4.2.8) lib/action_view/renderer/partial_renderer.rb:309:in `render'
+  actionview (4.2.8) lib/action_view/renderer/renderer.rb:51:in `render_partial'
+  actionview (4.2.8) lib/action_view/renderer/renderer.rb:25:in `render'
+  actionview (4.2.8) lib/action_view/helpers/rendering_helper.rb:32:in `render'
+  haml (5.0.4) lib/haml/helpers/action_view_mods.rb:12:in `block in render'
+  haml (5.0.4) lib/haml/helpers.rb:92:in `non_haml'
+  haml (5.0.4) lib/haml/helpers/action_view_mods.rb:12:in `render'
+  rails_admin (1.2.0) lib/rails_admin/config/fields/base.rb:227:in `block in <class:Base>'
+  rails_admin (1.2.0) lib/rails_admin/config/configurable.rb:66:in `instance_eval'
+  rails_admin (1.2.0) lib/rails_admin/config/configurable.rb:66:in `block in register_instance_option'
+  rails_admin (1.2.0) lib/rails_admin/config/proxyable/proxy.rb:27:in `method_missing'
+  rails_admin (1.2.0) app/helpers/rails_admin/form_builder.rb:73:in `field_for'
+  rails_admin (1.2.0) app/helpers/rails_admin/form_builder.rb:58:in `block in input_for'
+  actionview (4.2.8) lib/action_view/helpers/capture_helper.rb:38:in `block in capture'
+  actionview (4.2.8) lib/action_view/helpers/capture_helper.rb:202:in `with_output_buffer'
+  haml (5.0.4) lib/haml/helpers/action_view_xss_mods.rb:6:in `with_output_buffer_with_haml_xss'
+  actionview (4.2.8) lib/action_view/helpers/capture_helper.rb:38:in `capture'
+  haml (5.0.4) lib/haml/helpers/action_view_mods.rb:47:in `capture_with_haml'
+  actionview (4.2.8) lib/action_view/helpers/tag_helper.rb:106:in `content_tag'
+  haml (5.0.4) lib/haml/helpers/action_view_mods.rb:66:in `content_tag_with_haml'
+  rails_admin (1.2.0) app/helpers/rails_admin/form_builder.rb:57:in `input_for'
+  rails_admin (1.2.0) app/helpers/rails_admin/form_builder.rb:46:in `block in field_wrapper_for'
+  actionview (4.2.8) lib/action_view/helpers/capture_helper.rb:38:in `block in capture'
+  actionview (4.2.8) lib/action_view/helpers/capture_helper.rb:202:in `with_output_buffer'
+  haml (5.0.4) lib/haml/helpers/action_view_xss_mods.rb:6:in `with_output_buffer_with_haml_xss'
+  actionview (4.2.8) lib/action_view/helpers/capture_helper.rb:38:in `capture'
+  haml (5.0.4) lib/haml/helpers/action_view_mods.rb:47:in `capture_with_haml'
+  actionview (4.2.8) lib/action_view/helpers/tag_helper.rb:106:in `content_tag'
+  haml (5.0.4) lib/haml/helpers/action_view_mods.rb:66:in `content_tag_with_haml'
+  rails_admin (1.2.0) app/helpers/rails_admin/form_builder.rb:44:in `field_wrapper_for'
+  rails_admin (1.2.0) app/helpers/rails_admin/form_builder.rb:35:in `block (2 levels) in fieldset_for'
+  rails_admin (1.2.0) app/helpers/rails_admin/form_builder.rb:35:in `collect'
+  rails_admin (1.2.0) app/helpers/rails_admin/form_builder.rb:35:in `block in fieldset_for'
+  actionview (4.2.8) lib/action_view/helpers/capture_helper.rb:38:in `block in capture'
+  actionview (4.2.8) lib/action_view/helpers/capture_helper.rb:202:in `with_output_buffer'
+  haml (5.0.4) lib/haml/helpers/action_view_xss_mods.rb:6:in `with_output_buffer_with_haml_xss'
+  actionview (4.2.8) lib/action_view/helpers/capture_helper.rb:38:in `capture'
+  haml (5.0.4) lib/haml/helpers/action_view_mods.rb:47:in `capture_with_haml'
+  actionview (4.2.8) lib/action_view/helpers/tag_helper.rb:106:in `content_tag'
+  haml (5.0.4) lib/haml/helpers/action_view_mods.rb:66:in `content_tag_with_haml'
+  rails_admin (1.2.0) app/helpers/rails_admin/form_builder.rb:31:in `fieldset_for'
+  rails_admin (1.2.0) app/helpers/rails_admin/form_builder.rb:16:in `block (2 levels) in generate'
+  rails_admin (1.2.0) app/helpers/rails_admin/form_builder.rb:15:in `collect'
+  rails_admin (1.2.0) app/helpers/rails_admin/form_builder.rb:15:in `block in generate'
+  rails_admin (1.2.0) app/helpers/rails_admin/form_builder.rb:131:in `without_field_error_proc_added_div'
+  rails_admin (1.2.0) app/helpers/rails_admin/form_builder.rb:7:in `generate'
+  rails_admin (1.2.0) app/views/rails_admin/main/new.html.haml:2:in `block in _____itnami_rubystack_________ruby_lib_ruby_gems_______gems_rails_admin_______app_views_rails_admin_main_new_html_haml___197546711_96898032'
+  haml (5.0.4) lib/haml/helpers.rb:382:in `call'
+  haml (5.0.4) lib/haml/helpers.rb:382:in `block in capture_haml'
+  haml (5.0.4) lib/haml/helpers.rb:667:in `with_haml_buffer'
+  haml (5.0.4) lib/haml/helpers.rb:378:in `capture_haml'
+  haml (5.0.4) lib/haml/helpers/xss_mods.rb:62:in `capture_haml_with_haml_xss'
+  haml (5.0.4) lib/haml/helpers/action_view_mods.rb:45:in `capture_with_haml'
+  actionview (4.2.8) lib/action_view/helpers/form_helper.rb:444:in `form_for'
+  haml (5.0.4) lib/haml/helpers/action_view_xss_mods.rb:29:in `form_for_with_haml_xss'
+  rails_admin (1.2.0) app/helpers/rails_admin/main_helper.rb:9:in `rails_admin_form_for'
+  rails_admin (1.2.0) app/views/rails_admin/main/new.html.haml:1:in `_____itnami_rubystack_________ruby_lib_ruby_gems_______gems_rails_admin_______app_views_rails_admin_main_new_html_haml___197546711_96898032'
+  actionview (4.2.8) lib/action_view/template.rb:145:in `block in render'
+  activesupport (4.2.8) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (4.2.8) lib/action_view/template.rb:333:in `instrument'
+  actionview (4.2.8) lib/action_view/template.rb:143:in `render'
+  actionview (4.2.8) lib/action_view/renderer/template_renderer.rb:54:in `block (2 levels) in render_template'
+  actionview (4.2.8) lib/action_view/renderer/abstract_renderer.rb:39:in `block in instrument'
+  activesupport (4.2.8) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.8) lib/active_support/notifications.rb:164:in `instrument'
+  actionview (4.2.8) lib/action_view/renderer/abstract_renderer.rb:39:in `instrument'
+  actionview (4.2.8) lib/action_view/renderer/template_renderer.rb:53:in `block in render_template'
+  actionview (4.2.8) lib/action_view/renderer/template_renderer.rb:61:in `render_with_layout'
+  actionview (4.2.8) lib/action_view/renderer/template_renderer.rb:52:in `render_template'
+  actionview (4.2.8) lib/action_view/renderer/template_renderer.rb:14:in `render'
+  actionview (4.2.8) lib/action_view/renderer/renderer.rb:46:in `render_template'
+  actionview (4.2.8) lib/action_view/renderer/renderer.rb:27:in `render'
+  actionview (4.2.8) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.8) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.8) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.8) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.8) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.8) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.8) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.8) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.8) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.2.8) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.8) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.8) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.8) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.8) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  remotipart (1.3.1) lib/remotipart/render_overrides.rb:16:in `render_with_remotipart'
+  rails_admin (1.2.0) lib/rails_admin/config/actions/new.rb:28:in `block (4 levels) in <class:New>'
+  actionpack (4.2.8) lib/action_controller/metal/mime_responds.rb:217:in `call'
+  actionpack (4.2.8) lib/action_controller/metal/mime_responds.rb:217:in `respond_to'
+  rails_admin (1.2.0) lib/rails_admin/config/actions/new.rb:27:in `block (2 levels) in <class:New>'
+  rails_admin (1.2.0) app/controllers/rails_admin/main_controller.rb:22:in `instance_eval'
+  rails_admin (1.2.0) app/controllers/rails_admin/main_controller.rb:22:in `new'
+  actionpack (4.2.8) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.2.8) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.8) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.8) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.8) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.8) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.8) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.8) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.8) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.8) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.8) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.8) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.8) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.8) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.8) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.8) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.8) lib/action_dispatch/routing/route_set.rb:74:in `call'
+  actionpack (4.2.8) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.8) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.8) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.8) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.8) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.8) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/railtie.rb:194:in `public_send'
+  railties (4.2.8) lib/rails/railtie.rb:194:in `method_missing'
+  actionpack (4.2.8) lib/action_dispatch/routing/mapper.rb:51:in `serve'
+  actionpack (4.2.8) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.8) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.8) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.8) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack-pjax (1.0.0) lib/rack/pjax.rb:12:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+  warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+  warden (1.2.7) lib/warden/manager.rb:35:in `call'
+  rack (1.6.8) lib/rack/etag.rb:24:in `call'
+  rack (1.6.8) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.8) lib/rack/head.rb:13:in `call'
+  remotipart (1.3.1) lib/remotipart/middleware.rb:32:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.8) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.8) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.8) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.8) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (12.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (1017.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (953.9ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (2164.6ms)
+
+
+Started GET "/sale/new" for ::1 at 2017-11-27 22:54:54 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"model_name"=>"sale"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "clients"[0m
+  [1m[35mClient Load (0.5ms)[0m  SELECT "clients".* FROM "clients"  ORDER BY clients.id desc
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_filtering_select.html.haml (59.1ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (71.1ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/application (287.3ms)
+Completed 500 Internal Server Error in 979ms (ActiveRecord: 3.0ms)
+
+ActionView::Template::Error (undefined method `memberships' for #<Sale:0x5dbef68>
+If you want to use a RailsAdmin virtual field(= a field without corresponding instance method),
+you should declare 'formatted_value' in the field definition.
+  field :memberships do
+    formatted_value{ bindings[:object].call_some_method }
+  end
+):
+    1: = form.send field.view_helper, field.method_name, field.html_attributes.reverse_merge({ value: field.form_value, class: 'form-control', required: field.required})
+  rails_admin (1.2.0) lib/rails_admin/config/fields/base.rb:280:in `rescue in value'
+  rails_admin (1.2.0) lib/rails_admin/config/fields/base.rb:278:in `value'
+  rails_admin (1.2.0) lib/rails_admin/config/fields/base.rb:328:in `form_default_value'
+  rails_admin (1.2.0) lib/rails_admin/config/fields/base.rb:332:in `form_value'
+  rails_admin (1.2.0) app/views/rails_admin/main/_form_field.html.haml:1:in `_____itnami_rubystack_________ruby_lib_ruby_gems_______gems_rails_admin_______app_views_rails_admin_main__form_field_html_haml___687657303_46608264'
+  actionview (4.2.8) lib/action_view/template.rb:145:in `block in render'
+  activesupport (4.2.8) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (4.2.8) lib/action_view/template.rb:333:in `instrument'
+  actionview (4.2.8) lib/action_view/template.rb:143:in `render'
+  actionview (4.2.8) lib/action_view/renderer/partial_renderer.rb:339:in `render_partial'
+  actionview (4.2.8) lib/action_view/renderer/partial_renderer.rb:310:in `block in render'
+  actionview (4.2.8) lib/action_view/renderer/abstract_renderer.rb:39:in `block in instrument'
+  activesupport (4.2.8) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.8) lib/active_support/notifications.rb:164:in `instrument'
+  actionview (4.2.8) lib/action_view/renderer/abstract_renderer.rb:39:in `instrument'
+  actionview (4.2.8) lib/action_view/renderer/partial_renderer.rb:309:in `render'
+  actionview (4.2.8) lib/action_view/renderer/renderer.rb:51:in `render_partial'
+  actionview (4.2.8) lib/action_view/renderer/renderer.rb:25:in `render'
+  actionview (4.2.8) lib/action_view/helpers/rendering_helper.rb:32:in `render'
+  haml (5.0.4) lib/haml/helpers/action_view_mods.rb:12:in `block in render'
+  haml (5.0.4) lib/haml/helpers.rb:92:in `non_haml'
+  haml (5.0.4) lib/haml/helpers/action_view_mods.rb:12:in `render'
+  rails_admin (1.2.0) lib/rails_admin/config/fields/base.rb:227:in `block in <class:Base>'
+  rails_admin (1.2.0) lib/rails_admin/config/configurable.rb:66:in `instance_eval'
+  rails_admin (1.2.0) lib/rails_admin/config/configurable.rb:66:in `block in register_instance_option'
+  rails_admin (1.2.0) lib/rails_admin/config/proxyable/proxy.rb:27:in `method_missing'
+  rails_admin (1.2.0) app/helpers/rails_admin/form_builder.rb:73:in `field_for'
+  rails_admin (1.2.0) app/helpers/rails_admin/form_builder.rb:58:in `block in input_for'
+  actionview (4.2.8) lib/action_view/helpers/capture_helper.rb:38:in `block in capture'
+  actionview (4.2.8) lib/action_view/helpers/capture_helper.rb:202:in `with_output_buffer'
+  haml (5.0.4) lib/haml/helpers/action_view_xss_mods.rb:6:in `with_output_buffer_with_haml_xss'
+  actionview (4.2.8) lib/action_view/helpers/capture_helper.rb:38:in `capture'
+  haml (5.0.4) lib/haml/helpers/action_view_mods.rb:47:in `capture_with_haml'
+  actionview (4.2.8) lib/action_view/helpers/tag_helper.rb:106:in `content_tag'
+  haml (5.0.4) lib/haml/helpers/action_view_mods.rb:66:in `content_tag_with_haml'
+  rails_admin (1.2.0) app/helpers/rails_admin/form_builder.rb:57:in `input_for'
+  rails_admin (1.2.0) app/helpers/rails_admin/form_builder.rb:46:in `block in field_wrapper_for'
+  actionview (4.2.8) lib/action_view/helpers/capture_helper.rb:38:in `block in capture'
+  actionview (4.2.8) lib/action_view/helpers/capture_helper.rb:202:in `with_output_buffer'
+  haml (5.0.4) lib/haml/helpers/action_view_xss_mods.rb:6:in `with_output_buffer_with_haml_xss'
+  actionview (4.2.8) lib/action_view/helpers/capture_helper.rb:38:in `capture'
+  haml (5.0.4) lib/haml/helpers/action_view_mods.rb:47:in `capture_with_haml'
+  actionview (4.2.8) lib/action_view/helpers/tag_helper.rb:106:in `content_tag'
+  haml (5.0.4) lib/haml/helpers/action_view_mods.rb:66:in `content_tag_with_haml'
+  rails_admin (1.2.0) app/helpers/rails_admin/form_builder.rb:44:in `field_wrapper_for'
+  rails_admin (1.2.0) app/helpers/rails_admin/form_builder.rb:35:in `block (2 levels) in fieldset_for'
+  rails_admin (1.2.0) app/helpers/rails_admin/form_builder.rb:35:in `collect'
+  rails_admin (1.2.0) app/helpers/rails_admin/form_builder.rb:35:in `block in fieldset_for'
+  actionview (4.2.8) lib/action_view/helpers/capture_helper.rb:38:in `block in capture'
+  actionview (4.2.8) lib/action_view/helpers/capture_helper.rb:202:in `with_output_buffer'
+  haml (5.0.4) lib/haml/helpers/action_view_xss_mods.rb:6:in `with_output_buffer_with_haml_xss'
+  actionview (4.2.8) lib/action_view/helpers/capture_helper.rb:38:in `capture'
+  haml (5.0.4) lib/haml/helpers/action_view_mods.rb:47:in `capture_with_haml'
+  actionview (4.2.8) lib/action_view/helpers/tag_helper.rb:106:in `content_tag'
+  haml (5.0.4) lib/haml/helpers/action_view_mods.rb:66:in `content_tag_with_haml'
+  rails_admin (1.2.0) app/helpers/rails_admin/form_builder.rb:31:in `fieldset_for'
+  rails_admin (1.2.0) app/helpers/rails_admin/form_builder.rb:16:in `block (2 levels) in generate'
+  rails_admin (1.2.0) app/helpers/rails_admin/form_builder.rb:15:in `collect'
+  rails_admin (1.2.0) app/helpers/rails_admin/form_builder.rb:15:in `block in generate'
+  rails_admin (1.2.0) app/helpers/rails_admin/form_builder.rb:131:in `without_field_error_proc_added_div'
+  rails_admin (1.2.0) app/helpers/rails_admin/form_builder.rb:7:in `generate'
+  rails_admin (1.2.0) app/views/rails_admin/main/new.html.haml:2:in `block in _____itnami_rubystack_________ruby_lib_ruby_gems_______gems_rails_admin_______app_views_rails_admin_main_new_html_haml__1036987430_48957288'
+  haml (5.0.4) lib/haml/helpers.rb:382:in `call'
+  haml (5.0.4) lib/haml/helpers.rb:382:in `block in capture_haml'
+  haml (5.0.4) lib/haml/helpers.rb:667:in `with_haml_buffer'
+  haml (5.0.4) lib/haml/helpers.rb:378:in `capture_haml'
+  haml (5.0.4) lib/haml/helpers/xss_mods.rb:62:in `capture_haml_with_haml_xss'
+  haml (5.0.4) lib/haml/helpers/action_view_mods.rb:45:in `capture_with_haml'
+  actionview (4.2.8) lib/action_view/helpers/form_helper.rb:444:in `form_for'
+  haml (5.0.4) lib/haml/helpers/action_view_xss_mods.rb:29:in `form_for_with_haml_xss'
+  rails_admin (1.2.0) app/helpers/rails_admin/main_helper.rb:9:in `rails_admin_form_for'
+  rails_admin (1.2.0) app/views/rails_admin/main/new.html.haml:1:in `_____itnami_rubystack_________ruby_lib_ruby_gems_______gems_rails_admin_______app_views_rails_admin_main_new_html_haml__1036987430_48957288'
+  actionview (4.2.8) lib/action_view/template.rb:145:in `block in render'
+  activesupport (4.2.8) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (4.2.8) lib/action_view/template.rb:333:in `instrument'
+  actionview (4.2.8) lib/action_view/template.rb:143:in `render'
+  actionview (4.2.8) lib/action_view/renderer/template_renderer.rb:54:in `block (2 levels) in render_template'
+  actionview (4.2.8) lib/action_view/renderer/abstract_renderer.rb:39:in `block in instrument'
+  activesupport (4.2.8) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.8) lib/active_support/notifications.rb:164:in `instrument'
+  actionview (4.2.8) lib/action_view/renderer/abstract_renderer.rb:39:in `instrument'
+  actionview (4.2.8) lib/action_view/renderer/template_renderer.rb:53:in `block in render_template'
+  actionview (4.2.8) lib/action_view/renderer/template_renderer.rb:61:in `render_with_layout'
+  actionview (4.2.8) lib/action_view/renderer/template_renderer.rb:52:in `render_template'
+  actionview (4.2.8) lib/action_view/renderer/template_renderer.rb:14:in `render'
+  actionview (4.2.8) lib/action_view/renderer/renderer.rb:46:in `render_template'
+  actionview (4.2.8) lib/action_view/renderer/renderer.rb:27:in `render'
+  actionview (4.2.8) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.8) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.8) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.8) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.8) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.8) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.8) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.8) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.8) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.2.8) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.8) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.8) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.8) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.8) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  remotipart (1.3.1) lib/remotipart/render_overrides.rb:16:in `render_with_remotipart'
+  rails_admin (1.2.0) lib/rails_admin/config/actions/new.rb:28:in `block (4 levels) in <class:New>'
+  actionpack (4.2.8) lib/action_controller/metal/mime_responds.rb:217:in `call'
+  actionpack (4.2.8) lib/action_controller/metal/mime_responds.rb:217:in `respond_to'
+  rails_admin (1.2.0) lib/rails_admin/config/actions/new.rb:27:in `block (2 levels) in <class:New>'
+  rails_admin (1.2.0) app/controllers/rails_admin/main_controller.rb:22:in `instance_eval'
+  rails_admin (1.2.0) app/controllers/rails_admin/main_controller.rb:22:in `new'
+  actionpack (4.2.8) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.2.8) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.8) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.8) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.8) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.8) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.8) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.8) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.8) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.8) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.8) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.8) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.8) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.8) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.8) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.8) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.8) lib/action_dispatch/routing/route_set.rb:74:in `call'
+  actionpack (4.2.8) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.8) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.8) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.8) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.8) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.8) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/railtie.rb:194:in `public_send'
+  railties (4.2.8) lib/rails/railtie.rb:194:in `method_missing'
+  actionpack (4.2.8) lib/action_dispatch/routing/mapper.rb:51:in `serve'
+  actionpack (4.2.8) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.8) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.8) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.8) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack-pjax (1.0.0) lib/rack/pjax.rb:12:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+  warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+  warden (1.2.7) lib/warden/manager.rb:35:in `call'
+  rack (1.6.8) lib/rack/etag.rb:24:in `call'
+  rack (1.6.8) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.8) lib/rack/head.rb:13:in `call'
+  remotipart (1.3.1) lib/remotipart/middleware.rb:32:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.8) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.8) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.8) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.8) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (10.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (1030.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (937.9ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (2192.6ms)
+
+
+Started GET "/sale/new" for ::1 at 2017-11-27 23:00:56 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"model_name"=>"sale"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "clients"[0m
+  [1m[35mClient Load (0.5ms)[0m  SELECT "clients".* FROM "clients"  ORDER BY clients.id desc
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_filtering_select.html.haml (51.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (8.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (1.0ms)
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "checks"[0m
+  [1m[35mCheck Load (0.0ms)[0m  SELECT "checks".* FROM "checks"  ORDER BY checks.id desc
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_filtering_multiselect.html.haml (58.6ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_text.html.haml (3.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (4.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_submit_buttons.html.haml (15.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/application (799.8ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_secondary_navigation.html.haml (18.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_navigation.html.haml (96.6ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (56.1ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/pjax.html.haml (15.0ms)
+Completed 200 OK in 3240ms (Views: 2660.6ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/sale/new" for ::1 at 2017-11-27 23:01:48 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"model_name"=>"sale"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "clients"[0m
+  [1m[35mClient Load (0.0ms)[0m  SELECT "clients".* FROM "clients"  ORDER BY clients.id desc
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_filtering_select.html.haml (52.6ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (77.1ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/application (295.3ms)
+Completed 500 Internal Server Error in 1046ms (ActiveRecord: 2.0ms)
+
+ActionView::Template::Error (undefined method `productquantities' for #<Sale:0x5f4ed48>
+If you want to use a RailsAdmin virtual field(= a field without corresponding instance method),
+you should declare 'formatted_value' in the field definition.
+  field :productquantities do
+    formatted_value{ bindings[:object].call_some_method }
+  end
+):
+    1: = form.send field.view_helper, field.method_name, field.html_attributes.reverse_merge({ value: field.form_value, class: 'form-control', required: field.required})
+  rails_admin (1.2.0) lib/rails_admin/config/fields/base.rb:280:in `rescue in value'
+  rails_admin (1.2.0) lib/rails_admin/config/fields/base.rb:278:in `value'
+  rails_admin (1.2.0) lib/rails_admin/config/fields/base.rb:328:in `form_default_value'
+  rails_admin (1.2.0) lib/rails_admin/config/fields/base.rb:332:in `form_value'
+  rails_admin (1.2.0) app/views/rails_admin/main/_form_field.html.haml:1:in `_____itnami_rubystack_________ruby_lib_ruby_gems_______gems_rails_admin_______app_views_rails_admin_main__form_field_html_haml___751705973_46971228'
+  actionview (4.2.8) lib/action_view/template.rb:145:in `block in render'
+  activesupport (4.2.8) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (4.2.8) lib/action_view/template.rb:333:in `instrument'
+  actionview (4.2.8) lib/action_view/template.rb:143:in `render'
+  actionview (4.2.8) lib/action_view/renderer/partial_renderer.rb:339:in `render_partial'
+  actionview (4.2.8) lib/action_view/renderer/partial_renderer.rb:310:in `block in render'
+  actionview (4.2.8) lib/action_view/renderer/abstract_renderer.rb:39:in `block in instrument'
+  activesupport (4.2.8) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.8) lib/active_support/notifications.rb:164:in `instrument'
+  actionview (4.2.8) lib/action_view/renderer/abstract_renderer.rb:39:in `instrument'
+  actionview (4.2.8) lib/action_view/renderer/partial_renderer.rb:309:in `render'
+  actionview (4.2.8) lib/action_view/renderer/renderer.rb:51:in `render_partial'
+  actionview (4.2.8) lib/action_view/renderer/renderer.rb:25:in `render'
+  actionview (4.2.8) lib/action_view/helpers/rendering_helper.rb:32:in `render'
+  haml (5.0.4) lib/haml/helpers/action_view_mods.rb:12:in `block in render'
+  haml (5.0.4) lib/haml/helpers.rb:92:in `non_haml'
+  haml (5.0.4) lib/haml/helpers/action_view_mods.rb:12:in `render'
+  rails_admin (1.2.0) lib/rails_admin/config/fields/base.rb:227:in `block in <class:Base>'
+  rails_admin (1.2.0) lib/rails_admin/config/configurable.rb:66:in `instance_eval'
+  rails_admin (1.2.0) lib/rails_admin/config/configurable.rb:66:in `block in register_instance_option'
+  rails_admin (1.2.0) lib/rails_admin/config/proxyable/proxy.rb:27:in `method_missing'
+  rails_admin (1.2.0) app/helpers/rails_admin/form_builder.rb:73:in `field_for'
+  rails_admin (1.2.0) app/helpers/rails_admin/form_builder.rb:58:in `block in input_for'
+  actionview (4.2.8) lib/action_view/helpers/capture_helper.rb:38:in `block in capture'
+  actionview (4.2.8) lib/action_view/helpers/capture_helper.rb:202:in `with_output_buffer'
+  haml (5.0.4) lib/haml/helpers/action_view_xss_mods.rb:6:in `with_output_buffer_with_haml_xss'
+  actionview (4.2.8) lib/action_view/helpers/capture_helper.rb:38:in `capture'
+  haml (5.0.4) lib/haml/helpers/action_view_mods.rb:47:in `capture_with_haml'
+  actionview (4.2.8) lib/action_view/helpers/tag_helper.rb:106:in `content_tag'
+  haml (5.0.4) lib/haml/helpers/action_view_mods.rb:66:in `content_tag_with_haml'
+  rails_admin (1.2.0) app/helpers/rails_admin/form_builder.rb:57:in `input_for'
+  rails_admin (1.2.0) app/helpers/rails_admin/form_builder.rb:46:in `block in field_wrapper_for'
+  actionview (4.2.8) lib/action_view/helpers/capture_helper.rb:38:in `block in capture'
+  actionview (4.2.8) lib/action_view/helpers/capture_helper.rb:202:in `with_output_buffer'
+  haml (5.0.4) lib/haml/helpers/action_view_xss_mods.rb:6:in `with_output_buffer_with_haml_xss'
+  actionview (4.2.8) lib/action_view/helpers/capture_helper.rb:38:in `capture'
+  haml (5.0.4) lib/haml/helpers/action_view_mods.rb:47:in `capture_with_haml'
+  actionview (4.2.8) lib/action_view/helpers/tag_helper.rb:106:in `content_tag'
+  haml (5.0.4) lib/haml/helpers/action_view_mods.rb:66:in `content_tag_with_haml'
+  rails_admin (1.2.0) app/helpers/rails_admin/form_builder.rb:44:in `field_wrapper_for'
+  rails_admin (1.2.0) app/helpers/rails_admin/form_builder.rb:35:in `block (2 levels) in fieldset_for'
+  rails_admin (1.2.0) app/helpers/rails_admin/form_builder.rb:35:in `collect'
+  rails_admin (1.2.0) app/helpers/rails_admin/form_builder.rb:35:in `block in fieldset_for'
+  actionview (4.2.8) lib/action_view/helpers/capture_helper.rb:38:in `block in capture'
+  actionview (4.2.8) lib/action_view/helpers/capture_helper.rb:202:in `with_output_buffer'
+  haml (5.0.4) lib/haml/helpers/action_view_xss_mods.rb:6:in `with_output_buffer_with_haml_xss'
+  actionview (4.2.8) lib/action_view/helpers/capture_helper.rb:38:in `capture'
+  haml (5.0.4) lib/haml/helpers/action_view_mods.rb:47:in `capture_with_haml'
+  actionview (4.2.8) lib/action_view/helpers/tag_helper.rb:106:in `content_tag'
+  haml (5.0.4) lib/haml/helpers/action_view_mods.rb:66:in `content_tag_with_haml'
+  rails_admin (1.2.0) app/helpers/rails_admin/form_builder.rb:31:in `fieldset_for'
+  rails_admin (1.2.0) app/helpers/rails_admin/form_builder.rb:16:in `block (2 levels) in generate'
+  rails_admin (1.2.0) app/helpers/rails_admin/form_builder.rb:15:in `collect'
+  rails_admin (1.2.0) app/helpers/rails_admin/form_builder.rb:15:in `block in generate'
+  rails_admin (1.2.0) app/helpers/rails_admin/form_builder.rb:131:in `without_field_error_proc_added_div'
+  rails_admin (1.2.0) app/helpers/rails_admin/form_builder.rb:7:in `generate'
+  rails_admin (1.2.0) app/views/rails_admin/main/new.html.haml:2:in `block in _____itnami_rubystack_________ruby_lib_ruby_gems_______gems_rails_admin_______app_views_rails_admin_main_new_html_haml__769389667_49710744'
+  haml (5.0.4) lib/haml/helpers.rb:382:in `call'
+  haml (5.0.4) lib/haml/helpers.rb:382:in `block in capture_haml'
+  haml (5.0.4) lib/haml/helpers.rb:667:in `with_haml_buffer'
+  haml (5.0.4) lib/haml/helpers.rb:378:in `capture_haml'
+  haml (5.0.4) lib/haml/helpers/xss_mods.rb:62:in `capture_haml_with_haml_xss'
+  haml (5.0.4) lib/haml/helpers/action_view_mods.rb:45:in `capture_with_haml'
+  actionview (4.2.8) lib/action_view/helpers/form_helper.rb:444:in `form_for'
+  haml (5.0.4) lib/haml/helpers/action_view_xss_mods.rb:29:in `form_for_with_haml_xss'
+  rails_admin (1.2.0) app/helpers/rails_admin/main_helper.rb:9:in `rails_admin_form_for'
+  rails_admin (1.2.0) app/views/rails_admin/main/new.html.haml:1:in `_____itnami_rubystack_________ruby_lib_ruby_gems_______gems_rails_admin_______app_views_rails_admin_main_new_html_haml__769389667_49710744'
+  actionview (4.2.8) lib/action_view/template.rb:145:in `block in render'
+  activesupport (4.2.8) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (4.2.8) lib/action_view/template.rb:333:in `instrument'
+  actionview (4.2.8) lib/action_view/template.rb:143:in `render'
+  actionview (4.2.8) lib/action_view/renderer/template_renderer.rb:54:in `block (2 levels) in render_template'
+  actionview (4.2.8) lib/action_view/renderer/abstract_renderer.rb:39:in `block in instrument'
+  activesupport (4.2.8) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.8) lib/active_support/notifications.rb:164:in `instrument'
+  actionview (4.2.8) lib/action_view/renderer/abstract_renderer.rb:39:in `instrument'
+  actionview (4.2.8) lib/action_view/renderer/template_renderer.rb:53:in `block in render_template'
+  actionview (4.2.8) lib/action_view/renderer/template_renderer.rb:61:in `render_with_layout'
+  actionview (4.2.8) lib/action_view/renderer/template_renderer.rb:52:in `render_template'
+  actionview (4.2.8) lib/action_view/renderer/template_renderer.rb:14:in `render'
+  actionview (4.2.8) lib/action_view/renderer/renderer.rb:46:in `render_template'
+  actionview (4.2.8) lib/action_view/renderer/renderer.rb:27:in `render'
+  actionview (4.2.8) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.8) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.8) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.8) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.8) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.8) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.8) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.8) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.8) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.2.8) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.8) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.8) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.8) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.8) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  remotipart (1.3.1) lib/remotipart/render_overrides.rb:16:in `render_with_remotipart'
+  rails_admin (1.2.0) lib/rails_admin/config/actions/new.rb:28:in `block (4 levels) in <class:New>'
+  actionpack (4.2.8) lib/action_controller/metal/mime_responds.rb:217:in `call'
+  actionpack (4.2.8) lib/action_controller/metal/mime_responds.rb:217:in `respond_to'
+  rails_admin (1.2.0) lib/rails_admin/config/actions/new.rb:27:in `block (2 levels) in <class:New>'
+  rails_admin (1.2.0) app/controllers/rails_admin/main_controller.rb:22:in `instance_eval'
+  rails_admin (1.2.0) app/controllers/rails_admin/main_controller.rb:22:in `new'
+  actionpack (4.2.8) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.2.8) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.8) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.8) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.8) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.8) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.8) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.8) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.8) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.8) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.8) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.8) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.8) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.8) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.8) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.8) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.8) lib/action_dispatch/routing/route_set.rb:74:in `call'
+  actionpack (4.2.8) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.8) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.8) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.8) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.8) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.8) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/railtie.rb:194:in `public_send'
+  railties (4.2.8) lib/rails/railtie.rb:194:in `method_missing'
+  actionpack (4.2.8) lib/action_dispatch/routing/mapper.rb:51:in `serve'
+  actionpack (4.2.8) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.8) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.8) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.8) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack-pjax (1.0.0) lib/rack/pjax.rb:12:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+  warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+  warden (1.2.7) lib/warden/manager.rb:35:in `call'
+  rack (1.6.8) lib/rack/etag.rb:24:in `call'
+  rack (1.6.8) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.8) lib/rack/head.rb:13:in `call'
+  remotipart (1.3.1) lib/remotipart/middleware.rb:32:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.8) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.8) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.8) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.8) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (10.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (1093.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (1023.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (2265.7ms)
+
+
+Started GET "/sale/new" for ::1 at 2017-11-27 23:07:30 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"model_name"=>"sale"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "clients"[0m
+  [1m[35mClient Load (0.0ms)[0m  SELECT "clients".* FROM "clients"  ORDER BY clients.id desc
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_filtering_select.html.haml (55.1ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (80.6ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/application (300.3ms)
+Completed 500 Internal Server Error in 1101ms (ActiveRecord: 2.0ms)
+
+ActionView::Template::Error (undefined method `productquantity' for #<Sale:0x5f2af58>
+If you want to use a RailsAdmin virtual field(= a field without corresponding instance method),
+you should declare 'formatted_value' in the field definition.
+  field :productquantity do
+    formatted_value{ bindings[:object].call_some_method }
+  end
+):
+    1: = form.send field.view_helper, field.method_name, field.html_attributes.reverse_merge({ value: field.form_value, class: 'form-control', required: field.required})
+  rails_admin (1.2.0) lib/rails_admin/config/fields/base.rb:280:in `rescue in value'
+  rails_admin (1.2.0) lib/rails_admin/config/fields/base.rb:278:in `value'
+  rails_admin (1.2.0) lib/rails_admin/config/fields/base.rb:328:in `form_default_value'
+  rails_admin (1.2.0) lib/rails_admin/config/fields/base.rb:332:in `form_value'
+  rails_admin (1.2.0) app/views/rails_admin/main/_form_field.html.haml:1:in `_____itnami_rubystack_________ruby_lib_ruby_gems_______gems_rails_admin_______app_views_rails_admin_main__form_field_html_haml___426069633_47307792'
+  actionview (4.2.8) lib/action_view/template.rb:145:in `block in render'
+  activesupport (4.2.8) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (4.2.8) lib/action_view/template.rb:333:in `instrument'
+  actionview (4.2.8) lib/action_view/template.rb:143:in `render'
+  actionview (4.2.8) lib/action_view/renderer/partial_renderer.rb:339:in `render_partial'
+  actionview (4.2.8) lib/action_view/renderer/partial_renderer.rb:310:in `block in render'
+  actionview (4.2.8) lib/action_view/renderer/abstract_renderer.rb:39:in `block in instrument'
+  activesupport (4.2.8) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.8) lib/active_support/notifications.rb:164:in `instrument'
+  actionview (4.2.8) lib/action_view/renderer/abstract_renderer.rb:39:in `instrument'
+  actionview (4.2.8) lib/action_view/renderer/partial_renderer.rb:309:in `render'
+  actionview (4.2.8) lib/action_view/renderer/renderer.rb:51:in `render_partial'
+  actionview (4.2.8) lib/action_view/renderer/renderer.rb:25:in `render'
+  actionview (4.2.8) lib/action_view/helpers/rendering_helper.rb:32:in `render'
+  haml (5.0.4) lib/haml/helpers/action_view_mods.rb:12:in `block in render'
+  haml (5.0.4) lib/haml/helpers.rb:92:in `non_haml'
+  haml (5.0.4) lib/haml/helpers/action_view_mods.rb:12:in `render'
+  rails_admin (1.2.0) lib/rails_admin/config/fields/base.rb:227:in `block in <class:Base>'
+  rails_admin (1.2.0) lib/rails_admin/config/configurable.rb:66:in `instance_eval'
+  rails_admin (1.2.0) lib/rails_admin/config/configurable.rb:66:in `block in register_instance_option'
+  rails_admin (1.2.0) lib/rails_admin/config/proxyable/proxy.rb:27:in `method_missing'
+  rails_admin (1.2.0) app/helpers/rails_admin/form_builder.rb:73:in `field_for'
+  rails_admin (1.2.0) app/helpers/rails_admin/form_builder.rb:58:in `block in input_for'
+  actionview (4.2.8) lib/action_view/helpers/capture_helper.rb:38:in `block in capture'
+  actionview (4.2.8) lib/action_view/helpers/capture_helper.rb:202:in `with_output_buffer'
+  haml (5.0.4) lib/haml/helpers/action_view_xss_mods.rb:6:in `with_output_buffer_with_haml_xss'
+  actionview (4.2.8) lib/action_view/helpers/capture_helper.rb:38:in `capture'
+  haml (5.0.4) lib/haml/helpers/action_view_mods.rb:47:in `capture_with_haml'
+  actionview (4.2.8) lib/action_view/helpers/tag_helper.rb:106:in `content_tag'
+  haml (5.0.4) lib/haml/helpers/action_view_mods.rb:66:in `content_tag_with_haml'
+  rails_admin (1.2.0) app/helpers/rails_admin/form_builder.rb:57:in `input_for'
+  rails_admin (1.2.0) app/helpers/rails_admin/form_builder.rb:46:in `block in field_wrapper_for'
+  actionview (4.2.8) lib/action_view/helpers/capture_helper.rb:38:in `block in capture'
+  actionview (4.2.8) lib/action_view/helpers/capture_helper.rb:202:in `with_output_buffer'
+  haml (5.0.4) lib/haml/helpers/action_view_xss_mods.rb:6:in `with_output_buffer_with_haml_xss'
+  actionview (4.2.8) lib/action_view/helpers/capture_helper.rb:38:in `capture'
+  haml (5.0.4) lib/haml/helpers/action_view_mods.rb:47:in `capture_with_haml'
+  actionview (4.2.8) lib/action_view/helpers/tag_helper.rb:106:in `content_tag'
+  haml (5.0.4) lib/haml/helpers/action_view_mods.rb:66:in `content_tag_with_haml'
+  rails_admin (1.2.0) app/helpers/rails_admin/form_builder.rb:44:in `field_wrapper_for'
+  rails_admin (1.2.0) app/helpers/rails_admin/form_builder.rb:35:in `block (2 levels) in fieldset_for'
+  rails_admin (1.2.0) app/helpers/rails_admin/form_builder.rb:35:in `collect'
+  rails_admin (1.2.0) app/helpers/rails_admin/form_builder.rb:35:in `block in fieldset_for'
+  actionview (4.2.8) lib/action_view/helpers/capture_helper.rb:38:in `block in capture'
+  actionview (4.2.8) lib/action_view/helpers/capture_helper.rb:202:in `with_output_buffer'
+  haml (5.0.4) lib/haml/helpers/action_view_xss_mods.rb:6:in `with_output_buffer_with_haml_xss'
+  actionview (4.2.8) lib/action_view/helpers/capture_helper.rb:38:in `capture'
+  haml (5.0.4) lib/haml/helpers/action_view_mods.rb:47:in `capture_with_haml'
+  actionview (4.2.8) lib/action_view/helpers/tag_helper.rb:106:in `content_tag'
+  haml (5.0.4) lib/haml/helpers/action_view_mods.rb:66:in `content_tag_with_haml'
+  rails_admin (1.2.0) app/helpers/rails_admin/form_builder.rb:31:in `fieldset_for'
+  rails_admin (1.2.0) app/helpers/rails_admin/form_builder.rb:16:in `block (2 levels) in generate'
+  rails_admin (1.2.0) app/helpers/rails_admin/form_builder.rb:15:in `collect'
+  rails_admin (1.2.0) app/helpers/rails_admin/form_builder.rb:15:in `block in generate'
+  rails_admin (1.2.0) app/helpers/rails_admin/form_builder.rb:131:in `without_field_error_proc_added_div'
+  rails_admin (1.2.0) app/helpers/rails_admin/form_builder.rb:7:in `generate'
+  rails_admin (1.2.0) app/views/rails_admin/main/new.html.haml:2:in `block in _____itnami_rubystack_________ruby_lib_ruby_gems_______gems_rails_admin_______app_views_rails_admin_main_new_html_haml___500647315_49555452'
+  haml (5.0.4) lib/haml/helpers.rb:382:in `call'
+  haml (5.0.4) lib/haml/helpers.rb:382:in `block in capture_haml'
+  haml (5.0.4) lib/haml/helpers.rb:667:in `with_haml_buffer'
+  haml (5.0.4) lib/haml/helpers.rb:378:in `capture_haml'
+  haml (5.0.4) lib/haml/helpers/xss_mods.rb:62:in `capture_haml_with_haml_xss'
+  haml (5.0.4) lib/haml/helpers/action_view_mods.rb:45:in `capture_with_haml'
+  actionview (4.2.8) lib/action_view/helpers/form_helper.rb:444:in `form_for'
+  haml (5.0.4) lib/haml/helpers/action_view_xss_mods.rb:29:in `form_for_with_haml_xss'
+  rails_admin (1.2.0) app/helpers/rails_admin/main_helper.rb:9:in `rails_admin_form_for'
+  rails_admin (1.2.0) app/views/rails_admin/main/new.html.haml:1:in `_____itnami_rubystack_________ruby_lib_ruby_gems_______gems_rails_admin_______app_views_rails_admin_main_new_html_haml___500647315_49555452'
+  actionview (4.2.8) lib/action_view/template.rb:145:in `block in render'
+  activesupport (4.2.8) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (4.2.8) lib/action_view/template.rb:333:in `instrument'
+  actionview (4.2.8) lib/action_view/template.rb:143:in `render'
+  actionview (4.2.8) lib/action_view/renderer/template_renderer.rb:54:in `block (2 levels) in render_template'
+  actionview (4.2.8) lib/action_view/renderer/abstract_renderer.rb:39:in `block in instrument'
+  activesupport (4.2.8) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.8) lib/active_support/notifications.rb:164:in `instrument'
+  actionview (4.2.8) lib/action_view/renderer/abstract_renderer.rb:39:in `instrument'
+  actionview (4.2.8) lib/action_view/renderer/template_renderer.rb:53:in `block in render_template'
+  actionview (4.2.8) lib/action_view/renderer/template_renderer.rb:61:in `render_with_layout'
+  actionview (4.2.8) lib/action_view/renderer/template_renderer.rb:52:in `render_template'
+  actionview (4.2.8) lib/action_view/renderer/template_renderer.rb:14:in `render'
+  actionview (4.2.8) lib/action_view/renderer/renderer.rb:46:in `render_template'
+  actionview (4.2.8) lib/action_view/renderer/renderer.rb:27:in `render'
+  actionview (4.2.8) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.8) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.8) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.8) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.8) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.8) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.8) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.8) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.8) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.2.8) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.8) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.8) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.8) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.8) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  remotipart (1.3.1) lib/remotipart/render_overrides.rb:16:in `render_with_remotipart'
+  rails_admin (1.2.0) lib/rails_admin/config/actions/new.rb:28:in `block (4 levels) in <class:New>'
+  actionpack (4.2.8) lib/action_controller/metal/mime_responds.rb:217:in `call'
+  actionpack (4.2.8) lib/action_controller/metal/mime_responds.rb:217:in `respond_to'
+  rails_admin (1.2.0) lib/rails_admin/config/actions/new.rb:27:in `block (2 levels) in <class:New>'
+  rails_admin (1.2.0) app/controllers/rails_admin/main_controller.rb:22:in `instance_eval'
+  rails_admin (1.2.0) app/controllers/rails_admin/main_controller.rb:22:in `new'
+  actionpack (4.2.8) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.2.8) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.8) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.8) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.8) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.8) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.8) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.8) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.8) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.8) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.8) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.8) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.8) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.8) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.8) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.8) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.8) lib/action_dispatch/routing/route_set.rb:74:in `call'
+  actionpack (4.2.8) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.8) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.8) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.8) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.8) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.8) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/railtie.rb:194:in `public_send'
+  railties (4.2.8) lib/rails/railtie.rb:194:in `method_missing'
+  actionpack (4.2.8) lib/action_dispatch/routing/mapper.rb:51:in `serve'
+  actionpack (4.2.8) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.8) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.8) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.8) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack-pjax (1.0.0) lib/rack/pjax.rb:12:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+  warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+  warden (1.2.7) lib/warden/manager.rb:35:in `call'
+  rack (1.6.8) lib/rack/etag.rb:24:in `call'
+  rack (1.6.8) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.8) lib/rack/head.rb:13:in `call'
+  remotipart (1.3.1) lib/remotipart/middleware.rb:32:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.8) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.8) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.8) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.8) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (12.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (1078.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (1031.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (2347.8ms)
+
+
+Started GET "/sale/new" for 127.0.0.1 at 2017-11-27 23:08:44 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"model_name"=>"sale"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "clients"[0m
+  [1m[35mClient Load (0.0ms)[0m  SELECT "clients".* FROM "clients"  ORDER BY clients.id desc
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_filtering_select.html.haml (58.1ms)
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "product_quantities"[0m
+  [1m[35mProductQuantity Load (0.0ms)[0m  SELECT "product_quantities".* FROM "product_quantities"  ORDER BY product_quantities.id desc
+  [1m[36mProduct Load (0.5ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" IN (1)[0m
+  [1m[35mSale Load (0.5ms)[0m  SELECT "sales".* FROM "sales" WHERE "sales"."id" IN (1)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_filtering_multiselect.html.haml (99.6ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (5.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.5ms)
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "checks"[0m
+  [1m[35mCheck Load (0.0ms)[0m  SELECT "checks".* FROM "checks"  ORDER BY checks.id desc
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_filtering_multiselect.html.haml (37.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_text.html.haml (6.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (3.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_submit_buttons.html.haml (17.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/application (964.9ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_secondary_navigation.html.haml (23.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_navigation.html.haml (107.1ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (48.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/pjax.html.haml (15.5ms)
+Completed 200 OK in 3574ms (Views: 2951.0ms | ActiveRecord: 7.5ms)
+
+
+Started GET "/sale/new" for 127.0.0.1 at 2017-11-27 23:09:12 -0500
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"model_name"=>"sale"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mClient Load (0.5ms)[0m  SELECT "clients".* FROM "clients"  ORDER BY clients.id desc
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_filtering_select.html.haml (6.0ms)
+  [1m[36mProductQuantity Load (0.0ms)[0m  [1mSELECT "product_quantities".* FROM "product_quantities"  ORDER BY product_quantities.id desc[0m
+  [1m[35mProduct Load (0.5ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" IN (1)
+  [1m[36mSale Load (0.5ms)[0m  [1mSELECT "sales".* FROM "sales" WHERE "sales"."id" IN (1)[0m
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_filtering_multiselect.html.haml (13.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.5ms)
+  [1m[35mCheck Load (0.0ms)[0m  SELECT "checks".* FROM "checks"  ORDER BY checks.id desc
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_filtering_multiselect.html.haml (7.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_text.html.haml (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_submit_buttons.html.haml (1.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/application (708.7ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_secondary_navigation.html.haml (4.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_navigation.html.haml (74.6ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (10.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/pjax.html.haml (9.0ms)
+Completed 200 OK in 1656ms (Views: 1646.8ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/sale/new" for ::1 at 2017-11-27 23:09:55 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"model_name"=>"sale"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "clients"[0m
+  [1m[35mClient Load (0.0ms)[0m  SELECT "clients".* FROM "clients"  ORDER BY clients.id desc
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_filtering_select.html.haml (43.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (78.6ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/application (278.3ms)
+Completed 500 Internal Server Error in 990ms (ActiveRecord: 2.5ms)
+
+ActionView::Template::Error (undefined method `memberships' for #<Sale:0x5f4e0d0>
+If you want to use a RailsAdmin virtual field(= a field without corresponding instance method),
+you should declare 'formatted_value' in the field definition.
+  field :memberships do
+    formatted_value{ bindings[:object].call_some_method }
+  end
+):
+    1: = form.send field.view_helper, field.method_name, field.html_attributes.reverse_merge({ value: field.form_value, class: 'form-control', required: field.required})
+  rails_admin (1.2.0) lib/rails_admin/config/fields/base.rb:280:in `rescue in value'
+  rails_admin (1.2.0) lib/rails_admin/config/fields/base.rb:278:in `value'
+  rails_admin (1.2.0) lib/rails_admin/config/fields/base.rb:328:in `form_default_value'
+  rails_admin (1.2.0) lib/rails_admin/config/fields/base.rb:332:in `form_value'
+  rails_admin (1.2.0) app/views/rails_admin/main/_form_field.html.haml:1:in `_____itnami_rubystack_________ruby_lib_ruby_gems_______gems_rails_admin_______app_views_rails_admin_main__form_field_html_haml___324287558_47444148'
+  actionview (4.2.8) lib/action_view/template.rb:145:in `block in render'
+  activesupport (4.2.8) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (4.2.8) lib/action_view/template.rb:333:in `instrument'
+  actionview (4.2.8) lib/action_view/template.rb:143:in `render'
+  actionview (4.2.8) lib/action_view/renderer/partial_renderer.rb:339:in `render_partial'
+  actionview (4.2.8) lib/action_view/renderer/partial_renderer.rb:310:in `block in render'
+  actionview (4.2.8) lib/action_view/renderer/abstract_renderer.rb:39:in `block in instrument'
+  activesupport (4.2.8) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.8) lib/active_support/notifications.rb:164:in `instrument'
+  actionview (4.2.8) lib/action_view/renderer/abstract_renderer.rb:39:in `instrument'
+  actionview (4.2.8) lib/action_view/renderer/partial_renderer.rb:309:in `render'
+  actionview (4.2.8) lib/action_view/renderer/renderer.rb:51:in `render_partial'
+  actionview (4.2.8) lib/action_view/renderer/renderer.rb:25:in `render'
+  actionview (4.2.8) lib/action_view/helpers/rendering_helper.rb:32:in `render'
+  haml (5.0.4) lib/haml/helpers/action_view_mods.rb:12:in `block in render'
+  haml (5.0.4) lib/haml/helpers.rb:92:in `non_haml'
+  haml (5.0.4) lib/haml/helpers/action_view_mods.rb:12:in `render'
+  rails_admin (1.2.0) lib/rails_admin/config/fields/base.rb:227:in `block in <class:Base>'
+  rails_admin (1.2.0) lib/rails_admin/config/configurable.rb:66:in `instance_eval'
+  rails_admin (1.2.0) lib/rails_admin/config/configurable.rb:66:in `block in register_instance_option'
+  rails_admin (1.2.0) lib/rails_admin/config/proxyable/proxy.rb:27:in `method_missing'
+  rails_admin (1.2.0) app/helpers/rails_admin/form_builder.rb:73:in `field_for'
+  rails_admin (1.2.0) app/helpers/rails_admin/form_builder.rb:58:in `block in input_for'
+  actionview (4.2.8) lib/action_view/helpers/capture_helper.rb:38:in `block in capture'
+  actionview (4.2.8) lib/action_view/helpers/capture_helper.rb:202:in `with_output_buffer'
+  haml (5.0.4) lib/haml/helpers/action_view_xss_mods.rb:6:in `with_output_buffer_with_haml_xss'
+  actionview (4.2.8) lib/action_view/helpers/capture_helper.rb:38:in `capture'
+  haml (5.0.4) lib/haml/helpers/action_view_mods.rb:47:in `capture_with_haml'
+  actionview (4.2.8) lib/action_view/helpers/tag_helper.rb:106:in `content_tag'
+  haml (5.0.4) lib/haml/helpers/action_view_mods.rb:66:in `content_tag_with_haml'
+  rails_admin (1.2.0) app/helpers/rails_admin/form_builder.rb:57:in `input_for'
+  rails_admin (1.2.0) app/helpers/rails_admin/form_builder.rb:46:in `block in field_wrapper_for'
+  actionview (4.2.8) lib/action_view/helpers/capture_helper.rb:38:in `block in capture'
+  actionview (4.2.8) lib/action_view/helpers/capture_helper.rb:202:in `with_output_buffer'
+  haml (5.0.4) lib/haml/helpers/action_view_xss_mods.rb:6:in `with_output_buffer_with_haml_xss'
+  actionview (4.2.8) lib/action_view/helpers/capture_helper.rb:38:in `capture'
+  haml (5.0.4) lib/haml/helpers/action_view_mods.rb:47:in `capture_with_haml'
+  actionview (4.2.8) lib/action_view/helpers/tag_helper.rb:106:in `content_tag'
+  haml (5.0.4) lib/haml/helpers/action_view_mods.rb:66:in `content_tag_with_haml'
+  rails_admin (1.2.0) app/helpers/rails_admin/form_builder.rb:44:in `field_wrapper_for'
+  rails_admin (1.2.0) app/helpers/rails_admin/form_builder.rb:35:in `block (2 levels) in fieldset_for'
+  rails_admin (1.2.0) app/helpers/rails_admin/form_builder.rb:35:in `collect'
+  rails_admin (1.2.0) app/helpers/rails_admin/form_builder.rb:35:in `block in fieldset_for'
+  actionview (4.2.8) lib/action_view/helpers/capture_helper.rb:38:in `block in capture'
+  actionview (4.2.8) lib/action_view/helpers/capture_helper.rb:202:in `with_output_buffer'
+  haml (5.0.4) lib/haml/helpers/action_view_xss_mods.rb:6:in `with_output_buffer_with_haml_xss'
+  actionview (4.2.8) lib/action_view/helpers/capture_helper.rb:38:in `capture'
+  haml (5.0.4) lib/haml/helpers/action_view_mods.rb:47:in `capture_with_haml'
+  actionview (4.2.8) lib/action_view/helpers/tag_helper.rb:106:in `content_tag'
+  haml (5.0.4) lib/haml/helpers/action_view_mods.rb:66:in `content_tag_with_haml'
+  rails_admin (1.2.0) app/helpers/rails_admin/form_builder.rb:31:in `fieldset_for'
+  rails_admin (1.2.0) app/helpers/rails_admin/form_builder.rb:16:in `block (2 levels) in generate'
+  rails_admin (1.2.0) app/helpers/rails_admin/form_builder.rb:15:in `collect'
+  rails_admin (1.2.0) app/helpers/rails_admin/form_builder.rb:15:in `block in generate'
+  rails_admin (1.2.0) app/helpers/rails_admin/form_builder.rb:131:in `without_field_error_proc_added_div'
+  rails_admin (1.2.0) app/helpers/rails_admin/form_builder.rb:7:in `generate'
+  rails_admin (1.2.0) app/views/rails_admin/main/new.html.haml:2:in `block in _____itnami_rubystack_________ruby_lib_ruby_gems_______gems_rails_admin_______app_views_rails_admin_main_new_html_haml___390077032_49709136'
+  haml (5.0.4) lib/haml/helpers.rb:382:in `call'
+  haml (5.0.4) lib/haml/helpers.rb:382:in `block in capture_haml'
+  haml (5.0.4) lib/haml/helpers.rb:667:in `with_haml_buffer'
+  haml (5.0.4) lib/haml/helpers.rb:378:in `capture_haml'
+  haml (5.0.4) lib/haml/helpers/xss_mods.rb:62:in `capture_haml_with_haml_xss'
+  haml (5.0.4) lib/haml/helpers/action_view_mods.rb:45:in `capture_with_haml'
+  actionview (4.2.8) lib/action_view/helpers/form_helper.rb:444:in `form_for'
+  haml (5.0.4) lib/haml/helpers/action_view_xss_mods.rb:29:in `form_for_with_haml_xss'
+  rails_admin (1.2.0) app/helpers/rails_admin/main_helper.rb:9:in `rails_admin_form_for'
+  rails_admin (1.2.0) app/views/rails_admin/main/new.html.haml:1:in `_____itnami_rubystack_________ruby_lib_ruby_gems_______gems_rails_admin_______app_views_rails_admin_main_new_html_haml___390077032_49709136'
+  actionview (4.2.8) lib/action_view/template.rb:145:in `block in render'
+  activesupport (4.2.8) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (4.2.8) lib/action_view/template.rb:333:in `instrument'
+  actionview (4.2.8) lib/action_view/template.rb:143:in `render'
+  actionview (4.2.8) lib/action_view/renderer/template_renderer.rb:54:in `block (2 levels) in render_template'
+  actionview (4.2.8) lib/action_view/renderer/abstract_renderer.rb:39:in `block in instrument'
+  activesupport (4.2.8) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.8) lib/active_support/notifications.rb:164:in `instrument'
+  actionview (4.2.8) lib/action_view/renderer/abstract_renderer.rb:39:in `instrument'
+  actionview (4.2.8) lib/action_view/renderer/template_renderer.rb:53:in `block in render_template'
+  actionview (4.2.8) lib/action_view/renderer/template_renderer.rb:61:in `render_with_layout'
+  actionview (4.2.8) lib/action_view/renderer/template_renderer.rb:52:in `render_template'
+  actionview (4.2.8) lib/action_view/renderer/template_renderer.rb:14:in `render'
+  actionview (4.2.8) lib/action_view/renderer/renderer.rb:46:in `render_template'
+  actionview (4.2.8) lib/action_view/renderer/renderer.rb:27:in `render'
+  actionview (4.2.8) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.8) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.8) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.8) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.8) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.8) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.8) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.8) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.8) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.2.8) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.8) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.8) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.8) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.8) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  remotipart (1.3.1) lib/remotipart/render_overrides.rb:16:in `render_with_remotipart'
+  rails_admin (1.2.0) lib/rails_admin/config/actions/new.rb:28:in `block (4 levels) in <class:New>'
+  actionpack (4.2.8) lib/action_controller/metal/mime_responds.rb:217:in `call'
+  actionpack (4.2.8) lib/action_controller/metal/mime_responds.rb:217:in `respond_to'
+  rails_admin (1.2.0) lib/rails_admin/config/actions/new.rb:27:in `block (2 levels) in <class:New>'
+  rails_admin (1.2.0) app/controllers/rails_admin/main_controller.rb:22:in `instance_eval'
+  rails_admin (1.2.0) app/controllers/rails_admin/main_controller.rb:22:in `new'
+  actionpack (4.2.8) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.2.8) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.8) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.8) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.8) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.8) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.8) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.8) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.8) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.8) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.8) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.8) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.8) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.8) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.8) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.8) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.8) lib/action_dispatch/routing/route_set.rb:74:in `call'
+  actionpack (4.2.8) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.8) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.8) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.8) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.8) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.8) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/railtie.rb:194:in `public_send'
+  railties (4.2.8) lib/rails/railtie.rb:194:in `method_missing'
+  actionpack (4.2.8) lib/action_dispatch/routing/mapper.rb:51:in `serve'
+  actionpack (4.2.8) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.8) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.8) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.8) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack-pjax (1.0.0) lib/rack/pjax.rb:12:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+  warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+  warden (1.2.7) lib/warden/manager.rb:35:in `call'
+  rack (1.6.8) lib/rack/etag.rb:24:in `call'
+  rack (1.6.8) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.8) lib/rack/head.rb:13:in `call'
+  remotipart (1.3.1) lib/remotipart/middleware.rb:32:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.8) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.8) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.8) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.8) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (1073.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (984.9ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (2264.2ms)
+
+
+Started GET "/sale/new" for ::1 at 2017-11-27 23:13:32 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"model_name"=>"sale"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "clients"[0m
+  [1m[35mClient Load (0.0ms)[0m  SELECT "clients".* FROM "clients"  ORDER BY clients.id desc
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_filtering_select.html.haml (50.5ms)
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "memberships"[0m
+  [1m[35mMembership Load (0.0ms)[0m  SELECT "memberships".* FROM "memberships"  ORDER BY memberships.id desc
+  [1m[36mClient Load (0.5ms)[0m  [1mSELECT "clients".* FROM "clients" WHERE "clients"."id" IN (1)[0m
+  [1m[35mSale Load (0.5ms)[0m  SELECT "sales".* FROM "sales" WHERE "sales"."id" IN (1)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_filtering_multiselect.html.haml (100.1ms)
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "product_quantities"[0m
+  [1m[35mProductQuantity Load (0.5ms)[0m  SELECT "product_quantities".* FROM "product_quantities"  ORDER BY product_quantities.id desc
+  [1m[36mProduct Load (0.0ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" IN (1)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "sales".* FROM "sales" WHERE "sales"."id" IN (1)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_filtering_multiselect.html.haml (56.6ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (9.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (1.0ms)
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "checks"[0m
+  [1m[35mCheck Load (0.0ms)[0m  SELECT "checks".* FROM "checks"  ORDER BY checks.id desc
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_filtering_multiselect.html.haml (23.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_text.html.haml (5.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (4.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_submit_buttons.html.haml (15.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/application (1092.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_secondary_navigation.html.haml (23.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_navigation.html.haml (100.1ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (44.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/pjax.html.haml (29.5ms)
+Completed 200 OK in 3678ms (Views: 3057.9ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/sale/new" for ::1 at 2017-11-27 23:23:44 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"model_name"=>"sale"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_datetime.html.haml (2487.9ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/application (2583.5ms)
+Completed 500 Internal Server Error in 3368ms (ActiveRecord: 2.0ms)
+
+ActionView::Template::Error (undefined method `time' for #<#<Class:0x5df25e0>:0x5ddb048>):
+    1: .form-inline
+    2:   .input-group
+    3:     = form.send field.view_helper, field.method_name, field.html_attributes.reverse_merge({value: field.form_value, class: 'form-control', data: {datetimepicker: true, options: field.datepicker_options.to_json}})
+    4:     = form.label(field.method_name, class: 'input-group-addon') do
+    5:       %i.fa.fa-fw.fa-calendar
+  config/initializers/rails_admin.rb:231:in `block (5 levels) in <top (required)>'
+
+
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (11.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (1113.1ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (1001.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (2287.2ms)
+
+
+Started GET "/sale/new" for ::1 at 2017-11-27 23:34:26 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"model_name"=>"sale"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_datetime.html.haml (93.1ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/application (194.2ms)
+Completed 500 Internal Server Error in 946ms (ActiveRecord: 1.5ms)
+
+ActionView::Template::Error (undefined method `strftime_format' for #<Sale:0x5e70718>):
+    1: .form-inline
+    2:   .input-group
+    3:     = form.send field.view_helper, field.method_name, field.html_attributes.reverse_merge({value: field.form_value, class: 'form-control', data: {datetimepicker: true, options: field.datepicker_options.to_json}})
+    4:     = form.label(field.method_name, class: 'input-group-addon') do
+    5:       %i.fa.fa-fw.fa-calendar
+  config/initializers/rails_admin.rb:231:in `block (5 levels) in <top (required)>'
+
+
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (11.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (1104.1ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (1019.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (2311.7ms)
+
+
+Started GET "/sale/new" for ::1 at 2017-11-27 23:36:36 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"model_name"=>"sale"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_datetime.html.haml (17.5ms)
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "clients"[0m
+  [1m[35mClient Load (0.0ms)[0m  SELECT "clients".* FROM "clients"  ORDER BY clients.id desc
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_filtering_select.html.haml (49.5ms)
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "memberships"[0m
+  [1m[35mMembership Load (0.0ms)[0m  SELECT "memberships".* FROM "memberships"  ORDER BY memberships.id desc
+  [1m[36mClient Load (0.5ms)[0m  [1mSELECT "clients".* FROM "clients" WHERE "clients"."id" IN (1)[0m
+  [1m[35mSale Load (0.5ms)[0m  SELECT "sales".* FROM "sales" WHERE "sales"."id" IN (1)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_filtering_multiselect.html.haml (99.1ms)
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "product_quantities"[0m
+  [1m[35mProductQuantity Load (0.5ms)[0m  SELECT "product_quantities".* FROM "product_quantities"  ORDER BY product_quantities.id desc
+  [1m[36mProduct Load (0.0ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" IN (1)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "sales".* FROM "sales" WHERE "sales"."id" IN (1)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_filtering_multiselect.html.haml (55.6ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (5.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (1.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.5ms)
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "checks"[0m
+  [1m[35mCheck Load (0.0ms)[0m  SELECT "checks".* FROM "checks"  ORDER BY checks.id desc
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_filtering_multiselect.html.haml (24.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_text.html.haml (4.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (3.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_submit_buttons.html.haml (18.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/application (1122.6ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_secondary_navigation.html.haml (18.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_navigation.html.haml (106.1ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (36.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/pjax.html.haml (21.0ms)
+Completed 200 OK in 3639ms (Views: 3081.7ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/?_pjax=%5Bdata-pjax-container%5D" for ::1 at 2017-11-28 12:57:36 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RailsAdmin::MainController#dashboard as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (11.0ms)[0m  [1mSELECT COUNT(*) FROM "checks"[0m
+  [1m[35mCheck Load (0.0ms)[0m  SELECT  "checks".* FROM "checks"  ORDER BY "checks"."id" DESC LIMIT 1
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "clients"[0m
+  [1m[35mClient Load (0.0ms)[0m  SELECT  "clients".* FROM "clients"  ORDER BY "clients"."id" DESC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "headerclasses"[0m
+  [1m[35mHeaderclass Load (0.0ms)[0m  SELECT  "headerclasses".* FROM "headerclasses"  ORDER BY "headerclasses"."id" DESC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "memberships"[0m
+  [1m[35mMembership Load (1.0ms)[0m  SELECT  "memberships".* FROM "memberships"  ORDER BY "memberships"."id" DESC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "products"[0m
+  [1m[35mProduct Load (0.0ms)[0m  SELECT  "products".* FROM "products"  ORDER BY "products"."id" DESC LIMIT 1
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "product_quantities"[0m
+  [1m[35mProductQuantity Load (0.0ms)[0m  SELECT  "product_quantities".* FROM "product_quantities"  ORDER BY "product_quantities"."id" DESC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "providers"[0m
+  [1m[35mProvider Load (0.0ms)[0m  SELECT  "providers".* FROM "providers"  ORDER BY "providers"."id" DESC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "sales"[0m
+  [1m[35mSale Load (0.0ms)[0m  SELECT  "sales".* FROM "sales"  ORDER BY "sales"."id" DESC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "schedules"[0m
+  [1m[35mSchedule Load (0.0ms)[0m  SELECT  "schedules".* FROM "schedules"  ORDER BY "schedules"."id" DESC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "services"[0m
+  [1m[35mService Load (0.0ms)[0m  SELECT  "services".* FROM "services"  ORDER BY "services"."id" DESC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users"  ORDER BY "users"."id" DESC LIMIT 1
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/pjax (95.1ms)
+Completed 200 OK in 1548ms (Views: 922.3ms | ActiveRecord: 20.0ms)
+
+
+Started GET "/" for ::1 at 2017-11-28 12:57:49 -0500
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "checks"
+  [1m[36mCheck Load (0.0ms)[0m  [1mSELECT  "checks".* FROM "checks"  ORDER BY "checks"."id" DESC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "clients"
+  [1m[36mClient Load (0.0ms)[0m  [1mSELECT  "clients".* FROM "clients"  ORDER BY "clients"."id" DESC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "headerclasses"
+  [1m[36mHeaderclass Load (0.0ms)[0m  [1mSELECT  "headerclasses".* FROM "headerclasses"  ORDER BY "headerclasses"."id" DESC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "memberships"
+  [1m[36mMembership Load (1.0ms)[0m  [1mSELECT  "memberships".* FROM "memberships"  ORDER BY "memberships"."id" DESC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "products"
+  [1m[36mProduct Load (1.0ms)[0m  [1mSELECT  "products".* FROM "products"  ORDER BY "products"."id" DESC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "product_quantities"
+  [1m[36mProductQuantity Load (0.0ms)[0m  [1mSELECT  "product_quantities".* FROM "product_quantities"  ORDER BY "product_quantities"."id" DESC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "providers"
+  [1m[36mProvider Load (0.0ms)[0m  [1mSELECT  "providers".* FROM "providers"  ORDER BY "providers"."id" DESC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "sales"
+  [1m[36mSale Load (0.0ms)[0m  [1mSELECT  "sales".* FROM "sales"  ORDER BY "sales"."id" DESC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "schedules"
+  [1m[36mSchedule Load (0.0ms)[0m  [1mSELECT  "schedules".* FROM "schedules"  ORDER BY "schedules"."id" DESC LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "services"
+  [1m[36mService Load (0.0ms)[0m  [1mSELECT  "services".* FROM "services"  ORDER BY "services"."id" DESC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY "users"."id" DESC LIMIT 1[0m
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (60.1ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_secondary_navigation.html.haml (9.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_navigation.html.haml (68.1ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (17.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/pjax.html.haml (3.0ms)
+Completed 200 OK in 20911ms (Views: 20864.0ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/assets/rails_admin/rails_admin.self-213b916038e8097a6dba3e6ee46f510fa3c9514045093b18c2d4d817e035fb0c.css?body=1" for ::1 at 2017-11-28 12:58:10 -0500
+
+
+Started GET "/assets/rails_admin/custom/ui.self-950f1a5ff3c9e161db3d9a9b1d0ce7447b7516a4f0f8edfa0d1d405ae5ff881e.js?body=1" for ::1 at 2017-11-28 12:58:10 -0500
+
+
+Started GET "/" for ::1 at 2017-11-28 12:59:37 -0500
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "checks"[0m
+  [1m[35mCheck Load (1.0ms)[0m  SELECT  "checks".* FROM "checks"  ORDER BY "checks"."id" DESC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "clients"[0m
+  [1m[35mClient Load (0.0ms)[0m  SELECT  "clients".* FROM "clients"  ORDER BY "clients"."id" DESC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "headerclasses"[0m
+  [1m[35mHeaderclass Load (0.0ms)[0m  SELECT  "headerclasses".* FROM "headerclasses"  ORDER BY "headerclasses"."id" DESC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "memberships"[0m
+  [1m[35mMembership Load (0.0ms)[0m  SELECT  "memberships".* FROM "memberships"  ORDER BY "memberships"."id" DESC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "products"[0m
+  [1m[35mProduct Load (0.0ms)[0m  SELECT  "products".* FROM "products"  ORDER BY "products"."id" DESC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "product_quantities"[0m
+  [1m[35mProductQuantity Load (0.0ms)[0m  SELECT  "product_quantities".* FROM "product_quantities"  ORDER BY "product_quantities"."id" DESC LIMIT 1
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "providers"[0m
+  [1m[35mProvider Load (1.0ms)[0m  SELECT  "providers".* FROM "providers"  ORDER BY "providers"."id" DESC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "sales"[0m
+  [1m[35mSale Load (0.0ms)[0m  SELECT  "sales".* FROM "sales"  ORDER BY "sales"."id" DESC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "schedules"[0m
+  [1m[35mSchedule Load (0.0ms)[0m  SELECT  "schedules".* FROM "schedules"  ORDER BY "schedules"."id" DESC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "services"[0m
+  [1m[35mService Load (0.0ms)[0m  SELECT  "services".* FROM "services"  ORDER BY "services"."id" DESC LIMIT 1
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  ORDER BY "users"."id" DESC LIMIT 1
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (44.1ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_secondary_navigation.html.haml (3.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_navigation.html.haml (73.1ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (13.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/pjax.html.haml (2.0ms)
+Completed 200 OK in 960ms (Views: 923.5ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/" for ::1 at 2017-11-28 13:00:05 -0500
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "checks"
+  [1m[36mCheck Load (1.0ms)[0m  [1mSELECT  "checks".* FROM "checks"  ORDER BY "checks"."id" DESC LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "clients"
+  [1m[36mClient Load (0.0ms)[0m  [1mSELECT  "clients".* FROM "clients"  ORDER BY "clients"."id" DESC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "headerclasses"
+  [1m[36mHeaderclass Load (0.0ms)[0m  [1mSELECT  "headerclasses".* FROM "headerclasses"  ORDER BY "headerclasses"."id" DESC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "memberships"
+  [1m[36mMembership Load (1.0ms)[0m  [1mSELECT  "memberships".* FROM "memberships"  ORDER BY "memberships"."id" DESC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "products"
+  [1m[36mProduct Load (0.0ms)[0m  [1mSELECT  "products".* FROM "products"  ORDER BY "products"."id" DESC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "product_quantities"
+  [1m[36mProductQuantity Load (1.0ms)[0m  [1mSELECT  "product_quantities".* FROM "product_quantities"  ORDER BY "product_quantities"."id" DESC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "providers"
+  [1m[36mProvider Load (1.0ms)[0m  [1mSELECT  "providers".* FROM "providers"  ORDER BY "providers"."id" DESC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "sales"
+  [1m[36mSale Load (0.0ms)[0m  [1mSELECT  "sales".* FROM "sales"  ORDER BY "sales"."id" DESC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "schedules"
+  [1m[36mSchedule Load (0.0ms)[0m  [1mSELECT  "schedules".* FROM "schedules"  ORDER BY "schedules"."id" DESC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "services"
+  [1m[36mService Load (0.0ms)[0m  [1mSELECT  "services".* FROM "services"  ORDER BY "services"."id" DESC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY "users"."id" DESC LIMIT 1[0m
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (40.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_secondary_navigation.html.haml (4.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_navigation.html.haml (73.1ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (12.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/pjax.html.haml (2.0ms)
+Completed 200 OK in 992ms (Views: 957.8ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/" for ::1 at 2017-11-28 13:16:54 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "checks"[0m
+  [1m[35mCheck Load (0.0ms)[0m  SELECT  "checks".* FROM "checks"  ORDER BY "checks"."id" DESC LIMIT 1
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "clients"[0m
+  [1m[35mClient Load (0.0ms)[0m  SELECT  "clients".* FROM "clients"  ORDER BY "clients"."id" DESC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "headerclasses"[0m
+  [1m[35mHeaderclass Load (0.0ms)[0m  SELECT  "headerclasses".* FROM "headerclasses"  ORDER BY "headerclasses"."id" DESC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "memberships"[0m
+  [1m[35mMembership Load (0.0ms)[0m  SELECT  "memberships".* FROM "memberships"  ORDER BY "memberships"."id" DESC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "products"[0m
+  [1m[35mProduct Load (0.0ms)[0m  SELECT  "products".* FROM "products"  ORDER BY "products"."id" DESC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "product_quantities"[0m
+  [1m[35mProductQuantity Load (0.0ms)[0m  SELECT  "product_quantities".* FROM "product_quantities"  ORDER BY "product_quantities"."id" DESC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "providers"[0m
+  [1m[35mProvider Load (0.0ms)[0m  SELECT  "providers".* FROM "providers"  ORDER BY "providers"."id" DESC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "sales"[0m
+  [1m[35mSale Load (0.0ms)[0m  SELECT  "sales".* FROM "sales"  ORDER BY "sales"."id" DESC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "schedules"[0m
+  [1m[35mSchedule Load (0.0ms)[0m  SELECT  "schedules".* FROM "schedules"  ORDER BY "schedules"."id" DESC LIMIT 1
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "services"[0m
+  [1m[35mService Load (0.0ms)[0m  SELECT  "services".* FROM "services"  ORDER BY "services"."id" DESC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  ORDER BY "users"."id" DESC LIMIT 1
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (83.1ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_secondary_navigation.html.haml (11.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_navigation.html.haml (94.1ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (15.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/pjax.html.haml (7.0ms)
+Completed 200 OK in 2653ms (Views: 1941.9ms | ActiveRecord: 11.0ms)
+
+
+Started GET "/" for ::1 at 2017-11-28 13:19:17 -0500
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "checks"
+  [1m[36mCheck Load (0.0ms)[0m  [1mSELECT  "checks".* FROM "checks"  ORDER BY "checks"."id" DESC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "clients"
+  [1m[36mClient Load (0.0ms)[0m  [1mSELECT  "clients".* FROM "clients"  ORDER BY "clients"."id" DESC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "headerclasses"
+  [1m[36mHeaderclass Load (0.0ms)[0m  [1mSELECT  "headerclasses".* FROM "headerclasses"  ORDER BY "headerclasses"."id" DESC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "memberships"
+  [1m[36mMembership Load (0.0ms)[0m  [1mSELECT  "memberships".* FROM "memberships"  ORDER BY "memberships"."id" DESC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "products"
+  [1m[36mProduct Load (1.0ms)[0m  [1mSELECT  "products".* FROM "products"  ORDER BY "products"."id" DESC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "product_quantities"
+  [1m[36mProductQuantity Load (0.0ms)[0m  [1mSELECT  "product_quantities".* FROM "product_quantities"  ORDER BY "product_quantities"."id" DESC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "providers"
+  [1m[36mProvider Load (0.0ms)[0m  [1mSELECT  "providers".* FROM "providers"  ORDER BY "providers"."id" DESC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "sales"
+  [1m[36mSale Load (0.0ms)[0m  [1mSELECT  "sales".* FROM "sales"  ORDER BY "sales"."id" DESC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "schedules"
+  [1m[36mSchedule Load (0.0ms)[0m  [1mSELECT  "schedules".* FROM "schedules"  ORDER BY "schedules"."id" DESC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "services"
+  [1m[36mService Load (0.0ms)[0m  [1mSELECT  "services".* FROM "services"  ORDER BY "services"."id" DESC LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY "users"."id" DESC LIMIT 1[0m
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (38.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_secondary_navigation.html.haml (3.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_navigation.html.haml (72.1ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (13.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/pjax.html.haml (2.0ms)
+Completed 200 OK in 1001ms (Views: 966.2ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/" for ::1 at 2017-11-28 13:28:59 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "checks"[0m
+  [1m[35mCheck Load (0.0ms)[0m  SELECT  "checks".* FROM "checks"  ORDER BY "checks"."id" DESC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "clients"[0m
+  [1m[35mClient Load (1.0ms)[0m  SELECT  "clients".* FROM "clients"  ORDER BY "clients"."id" DESC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "headerclasses"[0m
+  [1m[35mHeaderclass Load (0.0ms)[0m  SELECT  "headerclasses".* FROM "headerclasses"  ORDER BY "headerclasses"."id" DESC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "memberships"[0m
+  [1m[35mMembership Load (0.0ms)[0m  SELECT  "memberships".* FROM "memberships"  ORDER BY "memberships"."id" DESC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "products"[0m
+  [1m[35mProduct Load (0.0ms)[0m  SELECT  "products".* FROM "products"  ORDER BY "products"."id" DESC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "product_quantities"[0m
+  [1m[35mProductQuantity Load (1.0ms)[0m  SELECT  "product_quantities".* FROM "product_quantities"  ORDER BY "product_quantities"."id" DESC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "providers"[0m
+  [1m[35mProvider Load (0.0ms)[0m  SELECT  "providers".* FROM "providers"  ORDER BY "providers"."id" DESC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "sales"[0m
+  [1m[35mSale Load (0.0ms)[0m  SELECT  "sales".* FROM "sales"  ORDER BY "sales"."id" DESC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "schedules"[0m
+  [1m[35mSchedule Load (0.0ms)[0m  SELECT  "schedules".* FROM "schedules"  ORDER BY "schedules"."id" DESC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "services"[0m
+  [1m[35mService Load (0.0ms)[0m  SELECT  "services".* FROM "services"  ORDER BY "services"."id" DESC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  ORDER BY "users"."id" DESC LIMIT 1
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (104.1ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_secondary_navigation.html.haml (11.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_navigation.html.haml (84.1ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (20.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/pjax.html.haml (9.0ms)
+Completed 200 OK in 23936ms (Views: 23258.7ms | ActiveRecord: 10.0ms)
+
+
+Started GET "/assets/rails_admin/rails_admin.self-35cde9449106c09e3c4dec2c65e73b7a23fcd3fd9cdd38cef7d3b4065abdd666.css?body=1" for ::1 at 2017-11-28 13:29:49 -0500
