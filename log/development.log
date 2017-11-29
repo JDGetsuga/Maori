@@ -18816,3 +18816,656 @@ Completed 200 OK in 23936ms (Views: 23258.7ms | ActiveRecord: 10.0ms)
 
 
 Started GET "/assets/rails_admin/rails_admin.self-35cde9449106c09e3c4dec2c65e73b7a23fcd3fd9cdd38cef7d3b4065abdd666.css?body=1" for ::1 at 2017-11-28 13:29:49 -0500
+
+
+Started GET "/" for ::1 at 2017-11-29 00:43:29 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 500 Internal Server Error in 103ms (ActiveRecord: 1.5ms)
+
+I18n::InvalidLocaleData (can not load translations from C:/Bitnami/rubystack-2.2.7-2/projects/Maori/config/locales/devise.es-ES.yml: expects it to return a hash, but does not):
+  i18n (0.9.1) lib/i18n/backend/base.rb:195:in `load_file'
+  i18n (0.9.1) lib/i18n/backend/base.rb:15:in `block in load_translations'
+  i18n (0.9.1) lib/i18n/backend/base.rb:15:in `each'
+  i18n (0.9.1) lib/i18n/backend/base.rb:15:in `load_translations'
+  i18n (0.9.1) lib/i18n/backend/simple.rb:57:in `init_translations'
+  i18n (0.9.1) lib/i18n/backend/simple.rb:71:in `lookup'
+  i18n (0.9.1) lib/i18n/backend/base.rb:26:in `translate'
+  i18n (0.9.1) lib/i18n.rb:166:in `block in translate'
+  i18n (0.9.1) lib/i18n.rb:162:in `catch'
+  i18n (0.9.1) lib/i18n.rb:162:in `translate'
+  rails_admin (1.2.0) app/helpers/rails_admin/application_helper.rb:65:in `wording_for'
+  rails_admin (1.2.0) app/controllers/rails_admin/main_controller.rb:20:in `dashboard'
+  actionpack (4.2.8) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.2.8) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.8) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.8) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.8) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.8) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.8) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.8) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.8) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.8) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.8) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.8) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.8) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.8) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.8) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.8) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.8) lib/action_dispatch/routing/route_set.rb:74:in `call'
+  actionpack (4.2.8) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.8) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.8) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.8) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.8) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.8) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/railtie.rb:194:in `public_send'
+  railties (4.2.8) lib/rails/railtie.rb:194:in `method_missing'
+  actionpack (4.2.8) lib/action_dispatch/routing/mapper.rb:51:in `serve'
+  actionpack (4.2.8) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.8) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.8) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.8) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack-pjax (1.0.0) lib/rack/pjax.rb:12:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+  warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+  warden (1.2.7) lib/warden/manager.rb:35:in `call'
+  rack (1.6.8) lib/rack/etag.rb:24:in `call'
+  rack (1.6.8) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.8) lib/rack/head.rb:13:in `call'
+  remotipart (1.3.1) lib/remotipart/middleware.rb:32:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.8) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.8) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.8) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.8) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (1224.7ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (1487.9ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (2242.7ms)
+
+
+Started GET "/" for ::1 at 2017-11-29 00:43:56 -0500
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.5ms)
+
+I18n::InvalidLocaleData (can not load translations from C:/Bitnami/rubystack-2.2.7-2/projects/Maori/config/locales/devise.es-ES.yml: expects it to return a hash, but does not):
+  i18n (0.9.1) lib/i18n/backend/base.rb:195:in `load_file'
+  i18n (0.9.1) lib/i18n/backend/base.rb:15:in `block in load_translations'
+  i18n (0.9.1) lib/i18n/backend/base.rb:15:in `each'
+  i18n (0.9.1) lib/i18n/backend/base.rb:15:in `load_translations'
+  i18n (0.9.1) lib/i18n/backend/simple.rb:57:in `init_translations'
+  i18n (0.9.1) lib/i18n/backend/simple.rb:71:in `lookup'
+  i18n (0.9.1) lib/i18n/backend/base.rb:26:in `translate'
+  i18n (0.9.1) lib/i18n.rb:166:in `block in translate'
+  i18n (0.9.1) lib/i18n.rb:162:in `catch'
+  i18n (0.9.1) lib/i18n.rb:162:in `translate'
+  rails_admin (1.2.0) app/helpers/rails_admin/application_helper.rb:65:in `wording_for'
+  rails_admin (1.2.0) app/controllers/rails_admin/main_controller.rb:20:in `dashboard'
+  actionpack (4.2.8) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.2.8) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.8) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.8) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.8) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.8) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.8) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.8) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.8) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.8) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.8) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.8) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.8) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.8) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.8) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.8) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.8) lib/action_dispatch/routing/route_set.rb:74:in `call'
+  actionpack (4.2.8) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.8) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.8) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.8) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.8) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.8) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/railtie.rb:194:in `public_send'
+  railties (4.2.8) lib/rails/railtie.rb:194:in `method_missing'
+  actionpack (4.2.8) lib/action_dispatch/routing/mapper.rb:51:in `serve'
+  actionpack (4.2.8) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.8) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.8) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.8) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack-pjax (1.0.0) lib/rack/pjax.rb:12:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+  warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+  warden (1.2.7) lib/warden/manager.rb:35:in `call'
+  rack (1.6.8) lib/rack/etag.rb:24:in `call'
+  rack (1.6.8) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.8) lib/rack/head.rb:13:in `call'
+  remotipart (1.3.1) lib/remotipart/middleware.rb:32:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.8) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.8) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.8) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.8) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (1195.6ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (1405.9ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (2109.0ms)
+
+
+Started GET "/" for ::1 at 2017-11-29 00:45:33 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "checks"[0m
+  [1m[35mCheck Load (0.5ms)[0m  SELECT  "checks".* FROM "checks"  ORDER BY "checks"."id" DESC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "clients"[0m
+  [1m[35mClient Load (0.5ms)[0m  SELECT  "clients".* FROM "clients"  ORDER BY "clients"."id" DESC LIMIT 1
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "headerclasses"[0m
+  [1m[35mHeaderclass Load (0.0ms)[0m  SELECT  "headerclasses".* FROM "headerclasses"  ORDER BY "headerclasses"."id" DESC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "memberships"[0m
+  [1m[35mMembership Load (0.0ms)[0m  SELECT  "memberships".* FROM "memberships"  ORDER BY "memberships"."id" DESC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "products"[0m
+  [1m[35mProduct Load (0.0ms)[0m  SELECT  "products".* FROM "products"  ORDER BY "products"."id" DESC LIMIT 1
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "product_quantities"[0m
+  [1m[35mProductQuantity Load (0.0ms)[0m  SELECT  "product_quantities".* FROM "product_quantities"  ORDER BY "product_quantities"."id" DESC LIMIT 1
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "providers"[0m
+  [1m[35mProvider Load (0.5ms)[0m  SELECT  "providers".* FROM "providers"  ORDER BY "providers"."id" DESC LIMIT 1
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "sales"[0m
+  [1m[35mSale Load (0.0ms)[0m  SELECT  "sales".* FROM "sales"  ORDER BY "sales"."id" DESC LIMIT 1
+  [1m[36m (20.0ms)[0m  [1mSELECT COUNT(*) FROM "schedules"[0m
+  [1m[35mSchedule Load (0.5ms)[0m  SELECT  "schedules".* FROM "schedules"  ORDER BY "schedules"."id" DESC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "services"[0m
+  [1m[35mService Load (0.5ms)[0m  SELECT  "services".* FROM "services"  ORDER BY "services"."id" DESC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  ORDER BY "users"."id" DESC LIMIT 1
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (133.6ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_secondary_navigation.html.haml (9.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_navigation.html.haml (94.6ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (17.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/pjax.html.haml (8.5ms)
+Completed 200 OK in 3717ms (Views: 2996.3ms | ActiveRecord: 32.0ms)
+
+
+Started GET "/" for ::1 at 2017-11-29 00:46:35 -0500
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "checks"
+  [1m[36mCheck Load (0.0ms)[0m  [1mSELECT  "checks".* FROM "checks"  ORDER BY "checks"."id" DESC LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "clients"
+  [1m[36mClient Load (0.5ms)[0m  [1mSELECT  "clients".* FROM "clients"  ORDER BY "clients"."id" DESC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "headerclasses"
+  [1m[36mHeaderclass Load (0.5ms)[0m  [1mSELECT  "headerclasses".* FROM "headerclasses"  ORDER BY "headerclasses"."id" DESC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "memberships"
+  [1m[36mMembership Load (0.0ms)[0m  [1mSELECT  "memberships".* FROM "memberships"  ORDER BY "memberships"."id" DESC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "products"
+  [1m[36mProduct Load (0.5ms)[0m  [1mSELECT  "products".* FROM "products"  ORDER BY "products"."id" DESC LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "product_quantities"
+  [1m[36mProductQuantity Load (0.5ms)[0m  [1mSELECT  "product_quantities".* FROM "product_quantities"  ORDER BY "product_quantities"."id" DESC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "providers"
+  [1m[36mProvider Load (0.5ms)[0m  [1mSELECT  "providers".* FROM "providers"  ORDER BY "providers"."id" DESC LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "sales"
+  [1m[36mSale Load (0.0ms)[0m  [1mSELECT  "sales".* FROM "sales"  ORDER BY "sales"."id" DESC LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "schedules"
+  [1m[36mSchedule Load (0.0ms)[0m  [1mSELECT  "schedules".* FROM "schedules"  ORDER BY "schedules"."id" DESC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "services"
+  [1m[36mService Load (0.0ms)[0m  [1mSELECT  "services".* FROM "services"  ORDER BY "services"."id" DESC LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY "users"."id" DESC LIMIT 1[0m
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (50.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_secondary_navigation.html.haml (4.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_navigation.html.haml (86.6ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (19.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/pjax.html.haml (1.0ms)
+Completed 200 OK in 1287ms (Views: 1079.0ms | ActiveRecord: 15.0ms)
+
+
+Started GET "/client?_pjax=%5Bdata-pjax-container%5D" for ::1 at 2017-11-29 00:46:42 -0500
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"client"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mClient Load (0.0ms)[0m  [1mSELECT  "clients".* FROM "clients"  ORDER BY clients.id desc LIMIT 20 OFFSET 0[0m
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (128.6ms)
+Completed 200 OK in 295ms (Views: 285.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/client?model_name=client&set=1&_pjax=%5Bdata-pjax-container%5D" for ::1 at 2017-11-29 00:46:46 -0500
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"client", "set"=>"1", "_pjax"=>"[data-pjax-container]"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mClient Load (0.5ms)[0m  [1mSELECT  "clients".* FROM "clients"  ORDER BY clients.id desc LIMIT 20 OFFSET 0[0m
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (86.1ms)
+Completed 200 OK in 233ms (Views: 225.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/client?model_name=client&set=2&_pjax=%5Bdata-pjax-container%5D" for ::1 at 2017-11-29 00:46:57 -0500
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"client", "set"=>"2", "_pjax"=>"[data-pjax-container]"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mClient Load (0.0ms)[0m  [1mSELECT  "clients".* FROM "clients"  ORDER BY clients.id desc LIMIT 20 OFFSET 0[0m
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (88.6ms)
+Completed 200 OK in 228ms (Views: 220.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/client/new?_pjax=%5Bdata-pjax-container%5D" for ::1 at 2017-11-29 00:47:29 -0500
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"client"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (20.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_datetime.html.haml (7.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_text.html.haml (4.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_submit_buttons.html.haml (14.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax (951.5ms)
+Completed 200 OK in 1093ms (Views: 1085.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/client/new" for ::1 at 2017-11-29 00:48:18 -0500
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"model_name"=>"client"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (1.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_datetime.html.haml (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_text.html.haml (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_submit_buttons.html.haml (2.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/application (976.4ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_secondary_navigation.html.haml (3.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_navigation.html.haml (72.1ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (60.1ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/pjax.html.haml (7.0ms)
+Completed 200 OK in 2097ms (Views: 2014.6ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/client?_pjax=%5Bdata-pjax-container%5D" for ::1 at 2017-11-29 00:48:21 -0500
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"client"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mClient Load (0.5ms)[0m  [1mSELECT  "clients".* FROM "clients"  ORDER BY clients.id desc LIMIT 20 OFFSET 0[0m
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (76.1ms)
+Completed 200 OK in 238ms (Views: 231.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/client" for ::1 at 2017-11-29 00:48:23 -0500
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"client"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mClient Load (0.5ms)[0m  [1mSELECT  "clients".* FROM "clients"  ORDER BY clients.id desc LIMIT 20 OFFSET 0[0m
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application (104.1ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_secondary_navigation.html.haml (4.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_navigation.html.haml (80.6ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (12.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/pjax.html.haml (6.0ms)
+Completed 200 OK in 1168ms (Views: 1159.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/client" for ::1 at 2017-11-29 00:48:41 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"client"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mClient Load (0.5ms)[0m  [1mSELECT  "clients".* FROM "clients"  ORDER BY clients.id desc LIMIT 20 OFFSET 0[0m
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application (203.2ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_secondary_navigation.html.haml (18.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_navigation.html.haml (112.6ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (45.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/pjax.html.haml (8.5ms)
+Completed 200 OK in 2922ms (Views: 2328.6ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/client" for ::1 at 2017-11-29 00:49:07 -0500
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"client"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mClient Load (0.5ms)[0m  [1mSELECT  "clients".* FROM "clients"  ORDER BY clients.id desc LIMIT 20 OFFSET 0[0m
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application (109.1ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_secondary_navigation.html.haml (5.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_navigation.html.haml (76.6ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (52.6ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/pjax.html.haml (6.5ms)
+Completed 200 OK in 1211ms (Views: 1154.7ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/client/new?_pjax=%5Bdata-pjax-container%5D" for ::1 at 2017-11-29 00:49:10 -0500
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"client"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (9.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_datetime.html.haml (7.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_text.html.haml (4.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_submit_buttons.html.haml (15.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax (896.9ms)
+Completed 200 OK in 1060ms (Views: 1053.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/client?_pjax=%5Bdata-pjax-container%5D" for ::1 at 2017-11-29 00:49:19 -0500
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"client"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mClient Load (0.5ms)[0m  SELECT  "clients".* FROM "clients"  ORDER BY clients.id desc LIMIT 20 OFFSET 0
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (82.6ms)
+Completed 200 OK in 233ms (Views: 225.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/client" for ::1 at 2017-11-29 00:50:18 -0500
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"client"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mClient Load (0.5ms)[0m  SELECT  "clients".* FROM "clients"  ORDER BY clients.id desc LIMIT 20 OFFSET 0
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application (102.1ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_secondary_navigation.html.haml (5.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_navigation.html.haml (72.1ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (64.1ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/pjax.html.haml (7.0ms)
+Completed 200 OK in 1270ms (Views: 1210.4ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/client/new?_pjax=%5Bdata-pjax-container%5D" for ::1 at 2017-11-29 00:50:21 -0500
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"client"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (1.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_datetime.html.haml (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_text.html.haml (1.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_submit_buttons.html.haml (2.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax (926.4ms)
+Completed 200 OK in 1103ms (Views: 1097.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/client?model_name=client&set=1&_pjax=%5Bdata-pjax-container%5D" for ::1 at 2017-11-29 00:50:25 -0500
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"client", "set"=>"1", "_pjax"=>"[data-pjax-container]"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mClient Load (0.5ms)[0m  [1mSELECT  "clients".* FROM "clients"  ORDER BY clients.id desc LIMIT 20 OFFSET 0[0m
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (82.6ms)
+Completed 200 OK in 233ms (Views: 225.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/client?model_name=client&_pjax=%5Bdata-pjax-container%5D" for ::1 at 2017-11-29 00:50:43 -0500
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"client", "_pjax"=>"[data-pjax-container]"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mClient Load (0.5ms)[0m  [1mSELECT  "clients".* FROM "clients"  ORDER BY clients.id desc LIMIT 20 OFFSET 0[0m
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (85.1ms)
+Completed 200 OK in 242ms (Views: 232.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/client?model_name=client&set=1&_pjax=%5Bdata-pjax-container%5D" for ::1 at 2017-11-29 00:50:54 -0500
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"client", "set"=>"1", "_pjax"=>"[data-pjax-container]"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mClient Load (0.5ms)[0m  [1mSELECT  "clients".* FROM "clients"  ORDER BY clients.id desc LIMIT 20 OFFSET 0[0m
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (101.1ms)
+Completed 200 OK in 245ms (Views: 238.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/client?model_name=client&set=1" for ::1 at 2017-11-29 00:51:24 -0500
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"client", "set"=>"1"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mClient Load (0.5ms)[0m  [1mSELECT  "clients".* FROM "clients"  ORDER BY clients.id desc LIMIT 20 OFFSET 0[0m
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application (123.1ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_secondary_navigation.html.haml (5.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_navigation.html.haml (85.1ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (47.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/pjax.html.haml (4.0ms)
+Completed 200 OK in 1248ms (Views: 1176.2ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/client?model_name=client&set=1" for ::1 at 2017-11-29 00:52:01 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"client", "set"=>"1"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mClient Load (0.5ms)[0m  [1mSELECT  "clients".* FROM "clients"  ORDER BY clients.id desc LIMIT 20 OFFSET 0[0m
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application (159.2ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_secondary_navigation.html.haml (16.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_navigation.html.haml (89.6ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (52.1ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/pjax.html.haml (13.5ms)
+Completed 200 OK in 2702ms (Views: 2134.6ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/client?model_name=client&set=2&_pjax=%5Bdata-pjax-container%5D" for ::1 at 2017-11-29 00:52:51 -0500
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"client", "set"=>"2", "_pjax"=>"[data-pjax-container]"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mClient Load (0.5ms)[0m  [1mSELECT  "clients".* FROM "clients"  ORDER BY clients.id desc LIMIT 20 OFFSET 0[0m
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (89.1ms)
+Completed 200 OK in 258ms (Views: 252.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/client?model_name=client&set=1&_pjax=%5Bdata-pjax-container%5D" for ::1 at 2017-11-29 00:52:54 -0500
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"client", "set"=>"1", "_pjax"=>"[data-pjax-container]"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mClient Load (0.5ms)[0m  [1mSELECT  "clients".* FROM "clients"  ORDER BY clients.id desc LIMIT 20 OFFSET 0[0m
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (97.6ms)
+Completed 200 OK in 242ms (Views: 234.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/client?model_name=client&_pjax=%5Bdata-pjax-container%5D" for ::1 at 2017-11-29 00:52:55 -0500
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"client", "_pjax"=>"[data-pjax-container]"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mClient Load (0.0ms)[0m  [1mSELECT  "clients".* FROM "clients"  ORDER BY clients.id desc LIMIT 20 OFFSET 0[0m
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (72.6ms)
+Completed 200 OK in 228ms (Views: 220.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/client/export?_pjax=%5Bdata-pjax-container%5D" for ::1 at 2017-11-29 00:54:00 -0500
+Processing by RailsAdmin::MainController#export as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"client"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mSELECT '' AS str;[0m
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/export.html.haml within layouts/rails_admin/pjax (108.1ms)
+Completed 200 OK in 1019ms (Views: 1011.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/client/new?_pjax=%5Bdata-pjax-container%5D" for ::1 at 2017-11-29 00:54:28 -0500
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"client"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (6.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_datetime.html.haml (8.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_text.html.haml (4.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_submit_buttons.html.haml (16.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax (912.4ms)
+Completed 200 OK in 1069ms (Views: 1063.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/client?_pjax=%5Bdata-pjax-container%5D" for ::1 at 2017-11-29 00:54:30 -0500
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"client"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mClient Load (0.0ms)[0m  SELECT  "clients".* FROM "clients"  ORDER BY clients.id desc LIMIT 20 OFFSET 0
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (89.1ms)
+Completed 200 OK in 227ms (Views: 220.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/1/edit" for ::1 at 2017-11-29 00:54:31 -0500
+Processing by RailsAdmin::MainController#edit as HTML
+  Parameters: {"model_name"=>"user", "id"=>"1"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_text.html.haml (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_datetime.html.haml (2.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_boolean.html.haml (25.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_datetime.html.haml (2.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_datetime.html.haml (2.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (4.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_datetime.html.haml (2.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_datetime.html.haml (2.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (3.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_datetime.html.haml (3.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_datetime.html.haml (4.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.5ms)
+  [1m[36mSchedule Load (0.5ms)[0m  [1mSELECT "schedules".* FROM "schedules" WHERE "schedules"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "schedules"
+  [1m[36mSchedule Load (0.0ms)[0m  [1mSELECT "schedules".* FROM "schedules"  ORDER BY schedules.id desc[0m
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_filtering_multiselect.html.haml (107.1ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_submit_buttons.html.haml (2.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/edit.html.haml within layouts/rails_admin/application (1795.7ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_secondary_navigation.html.haml (3.0ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_navigation.html.haml (77.1ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (19.5ms)
+  Rendered C:/Bitnami/rubystack-2.2.7-2/ruby/lib/ruby/gems/2.2.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/pjax.html.haml (9.0ms)
+Completed 200 OK in 2856ms (Views: 2845.0ms | ActiveRecord: 1.5ms)
