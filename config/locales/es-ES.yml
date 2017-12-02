@@ -9,6 +9,55 @@ es-ES:
       client:
         one: Cliente
         other: Clientes
+
+      check:
+        one: "Cheque"
+        other: "Cheques"
+
+      headerclass:
+        one: "clase"
+        other: "Clases"
+
+      detailclass:
+          one: "Registro de clase"
+          other: "Registros de Clases"
+
+      membership:
+          one: "Membresia"
+          other: "Membresias"
+
+      price:
+          one: "Precio"
+          other: "Precios"
+
+      product_quantity:
+          one: "Producto Vendido"
+          other: "Productos Vendidos"
+
+      product:
+          one: "Producto"
+          other: "Productos"
+
+      provider:
+          one: "Proveedor"
+          other: "Proveedores"
+
+      sale:
+          one: "Venta"
+          other: "Ventas"
+
+      schedule:
+          one: "Horario"
+          other: "Horarios"
+
+      service:
+          one: "Servicio"
+          other: "Servicios"
+
+      user:
+          one: "Usuario"
+          other: "Usuarios"
+
     attributes:
       client:
         nombre: "Nombres"
@@ -23,6 +72,112 @@ es-ES:
         provincia: "Provincia"
         pais: "Pais"
 
+      check:
+        numero: "Numero de Cheque"
+        nombre: "Propietario"
+        banco: "Banco"
+        cantidad: "Valor Total"
+        sale_id: "Numero de Factura"
+
+
+      detailclass:
+        client_id: "Cliente"
+        membership_id: "Membresia"
+        estado: "Estado"
+        nota: "Notas"
+        headerclass_id: "Clases"
+
+      headerclass:
+        fecha: "Fecha"
+        horainicio: "Inicio de la clase"
+        horafin: "Fin de la clase"
+        capacidadmaxima: "Capacidad"
+        registrados: "Registros"
+        service_id: "Servicio"
+        schedule_id: "Horario"
+
+      membership:
+          client_id: "Cliente"
+          fechainicio: "Fecha de Inicio"
+          fechaexpiracion: "Expira"
+          service_id: "Servicio"
+          price_id: "Precio"
+          entradastotales: "Entradas"
+          entradasfaltantes: "Entradas restantes"
+          estado: "Estado"
+          sale_id: "Numero de Factura"
+
+      price:
+          nombretarifa: "Nombre de la tarifa"
+          sesiones: "Numero de sesiones"
+          service_id: "Servicio"
+          precio: "Precio"
+          descuento: "Descuento"
+          estado: "Estado"
+
+      product_quantity:
+          product_id: "Producto"
+          quantity: "Cantidad"
+          sale_id: "Factura"
+          created_at: "Creado en"
+          updated_at: "Ultima modificacion"
+
+      product:
+          nombre: "Nombre"
+          preciocompra: "Precio de compra"
+          precioventa: "Precio de venta"
+          cantidad: "Cantidad acutal"
+          cantidadminima: "Cantidad minima"
+          ganancia: "Ganancia total"
+          provider_id: "Proveedor"
+          tipo: "Tipo"
+          estado: "Estado"
+
+      provider:
+        nombre: "Nombre del proveedor"
+        ruc: "Ruc"
+        telefono: "Telefono"
+        direccion: "Direccion"
+        email: "Email"
+
+      sale:
+          fecha: "Fecha de venta"
+          hora: "Hora de venta"
+          client_id: "Cliente"
+          user_id: "Empleado"
+          membership_id: "Membresias"
+          totalefectivo: "Total en efectivo"
+          totaltarjeta: "Total en tarjeta"
+          totalcheque: "Total en cheque"
+          total: "Total a pagar"
+          nota: "Notas"
+
+      schedule:
+          fechainicio: "Fecha de Inicio"
+          fechafin: "Fecha fin"
+          dias: "Numero de dias"
+          horainicio: "Hora inicio"
+          horafin: "Hora Fin"
+          user_id: "Profesor"
+          service_id: "Servicio"
+
+      service:
+          nombre: "Nombre"
+          descripcion: "Descripcion del servicio"
+
+      user:
+          nombre: "Nombres"
+          apellido: "Apellidos"
+          cedula: "Numero de cedula"
+          direccion: "Direccion"
+          fechanacimiento: "Fecha de nacimiento"
+          telefono: "Numero de Telefono"
+          estado: "Estado"
+          fechacontrato: "Fecha de contrato"
+          fechafincontrato: "Expiracion de contrato"
+          cargo: "Cargo"
+          email: "Email"
+          password: "Contraseña"
         
   views:
   admin:
