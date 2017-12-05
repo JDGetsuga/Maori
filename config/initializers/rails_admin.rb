@@ -198,18 +198,18 @@ config.model User do
 
    config.model Product do
     create do
-      configure :cantidadminima do
+      configure :product_quantities do
         hide
       end      
     end
     edit do
-      configure :cantidadminima do
+      configure :product_quantities do
         hide
       end 
       
     end
     list do
-      configure :cantidadminima do
+      configure :product_quantities do
         hide
       end 
     end
@@ -228,14 +228,18 @@ config.model User do
 
    config.model Sale do
     create do
-      field :fecha 
-      field :client
+      field :fecha do
+        default_value do
+            
+        end
+      end
+      field :client 
       field :membership
       field :product_quantities
       field :totalefectivo
       field :totaltarjeta
       field :totalcheque
-      field :total
+      field :total   
       field :checks
       field :nota
       field :user_id, :hidden do

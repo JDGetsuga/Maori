@@ -5,4 +5,9 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 	has_many :schedules
 	has_many :sales
+
+	def cargo_enum
+		['Admin','Cajero','Profesor','Conserje']
+	end
+
 end
